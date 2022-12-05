@@ -1,12 +1,15 @@
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import styles from './app.module.css';
-import NxWelcome from './nx-welcome';
+import useGetScoreboard from './hooks/useGetScoreboard';
 
 export function App() {
+  const { data, isLoading } = useGetScoreboard();
+
   return (
     <>
-      <NxWelcome title="nba-client" />
-      <div />
+      {isLoading
+        ? null
+        : data?.scoreboard.games.map((game) => (
+            <p key={game.gameId}>{game.homeTeam.teamName}</p>
+          ))}
     </>
   );
 }
