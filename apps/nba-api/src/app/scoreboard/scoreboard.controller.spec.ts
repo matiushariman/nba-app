@@ -1,21 +1,21 @@
 import { Test, TestingModule } from '@nestjs/testing';
 
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
+import { ScoreboardController } from './scoreboard.controller';
+import { ScoreboardService } from './scoreboard.service';
 
-describe('AppController', () => {
+describe('ScoreboardController', () => {
   let app: TestingModule;
 
   beforeAll(async () => {
     app = await Test.createTestingModule({
-      controllers: [AppController],
-      providers: [AppService],
+      controllers: [ScoreboardController],
+      providers: [ScoreboardService],
     }).compile();
   });
 
   describe('getData', () => {
     it('should return "Welcome to nba-api!"', () => {
-      const appController = app.get<AppController>(AppController);
+      const appController = app.get<ScoreboardController>(ScoreboardController);
       expect(appController.getData()).toEqual({
         message: 'Welcome to nba-api!',
       });
