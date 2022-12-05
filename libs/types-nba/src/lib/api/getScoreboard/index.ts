@@ -63,7 +63,7 @@ interface Game {
   seriesText: string;
   homeTeam: Team;
   awayTeam: Team;
-  gameLeader: GameLeaders;
+  gameLeaders: GameLeaders;
   pbOdds: PbOdds;
 }
 
