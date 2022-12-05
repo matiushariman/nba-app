@@ -1,0 +1,16 @@
+{
+  "name": "types-nba",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/types-nba/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/types-nba/**/*.ts"]
+      }
+    }
+  },
+  "tags": []
+}
