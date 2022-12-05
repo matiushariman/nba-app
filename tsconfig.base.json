@@ -15,6 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@nba-app/nba-api-client-wrapper": [
+        "libs/nba-api-client-wrapper/src/index.ts"
+      ],
       "@nba-app/types-nba": ["libs/types-nba/src/index.ts"]
     }
   },
