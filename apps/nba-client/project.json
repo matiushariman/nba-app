@@ -18,7 +18,8 @@
         "tsConfig": "apps/nba-client/tsconfig.app.json",
         "assets": [
           "apps/nba-client/src/favicon.ico",
-          "apps/nba-client/src/assets"
+          "apps/nba-client/src/assets",
+          "apps/nba-client/src/mockServiceWorker.js"
         ],
         "styles": ["apps/nba-client/src/styles.css"],
         "scripts": [],

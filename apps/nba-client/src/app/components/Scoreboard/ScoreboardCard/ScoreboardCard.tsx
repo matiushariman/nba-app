@@ -1,5 +1,6 @@
 import ScoreboardTeamDetails from './ScoreboardTeamDetails';
 import Score from './Score';
+import GameStatusText from './GameStatusText';
 
 import type { ScoreboardCardProps } from './ScoreboardCard.types';
 
@@ -19,7 +20,7 @@ const ScoreboardCard = ({
       <Score score={awayTeam.score} />
     </div>
     <div className="flex-grow flex justify-center">
-      <p className="text-sm uppercase font-bold">{gameStatusText}</p>
+      <GameStatusText gameStatusText={gameStatusText} />
     </div>
     <div className="flex gap-3 items-center">
       <Score score={homeTeam.score} />

@@ -1,7 +1,9 @@
 import { ScoreProps } from './Score.types';
 
 const Score = ({ score }: ScoreProps) => (
-  <p className="font-bold text-3xl">{score}</p>
+  <div className="w-[52px]">
+    <p className="font-bold text-3xl">{score}</p>
+  </div>
 );
 
 export default Score;
