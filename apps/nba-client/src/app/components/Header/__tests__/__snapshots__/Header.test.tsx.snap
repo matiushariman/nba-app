@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/Header should render Header that matches snapshot 1`] = `
+<body>
+  <div>
+    <div
+      class="dark:bg-[#000] text-white pl-8 pr-8 pt-3 pb-3"
+    >
+      <img
+        alt="NBA Logo"
+        height="28"
+        src="https://cdn.nba.com/logos/leagues/logo-nba.svg"
+        width="48"
+      />
+    </div>
+  </div>
+</body>
+`;

@@ -1,15 +1,11 @@
-import useGetScoreboard from './hooks/useGetScoreboard';
+import Header from './components/Header';
+import Scoreboard from './components/Scoreboard';
 
 export function App() {
-  const { data, isLoading } = useGetScoreboard();
-
   return (
     <>
-      {isLoading
-        ? null
-        : data?.scoreboard.games.map((game) => (
-            <p key={game.gameId}>{game.homeTeam.teamName}</p>
-          ))}
+      <Header />
+      <Scoreboard />
     </>
   );
 }

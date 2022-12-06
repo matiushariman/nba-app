@@ -22,7 +22,8 @@
         ],
         "styles": ["apps/nba-client/src/styles.css"],
         "scripts": [],
-        "webpackConfig": "@nrwl/react/plugins/webpack"
+        "webpackConfig": "@nrwl/react/plugins/webpack",
+        "postcssConfig": "apps/nba-client/postcss.config.js"
       },
       "configurations": {
         "development": {

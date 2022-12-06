@@ -11,7 +11,7 @@ interface Period {
   score: number;
 }
 
-interface Team {
+export interface Team {
   teamId: number;
   teamName: string;
   teamCity: string;
@@ -48,7 +48,7 @@ interface PbOdds {
   suspended: number;
 }
 
-interface Game {
+export interface Game {
   gameId: string;
   gameCode: string;
   gameStatus: number;

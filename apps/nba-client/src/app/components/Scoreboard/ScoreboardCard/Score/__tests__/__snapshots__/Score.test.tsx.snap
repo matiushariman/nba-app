@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/Scoreboard/ScoreboardCard/Score should render Score that matches snapshot 1`] = `
+<body>
+  <div>
+    <p
+      class="font-bold text-3xl"
+    >
+      100
+    </p>
+  </div>
+</body>
+`;
