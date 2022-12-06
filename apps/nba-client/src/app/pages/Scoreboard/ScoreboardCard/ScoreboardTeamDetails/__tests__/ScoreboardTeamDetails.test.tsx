@@ -1,7 +1,7 @@
 import ScoreboardTeamDetails from '..';
 import { render } from '../../../../../utils/testUtils';
 
-describe('components/Scoreboard/ScoreboardCard/ScoreboardTeamDetails', () => {
+describe('pages/Scoreboard/ScoreboardCard/ScoreboardTeamDetails', () => {
   it('should render ScoreboardTeamDetails that matches snapshot', () => {
     const { baseElement } = render(
       <ScoreboardTeamDetails

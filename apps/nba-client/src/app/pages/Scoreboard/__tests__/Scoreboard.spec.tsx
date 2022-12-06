@@ -1,7 +1,7 @@
 import Scoreboard from '..';
 import { render, screen } from '../../../utils/testUtils';
 
-describe('components/Scoreboard', () => {
+describe('pages/Scoreboard', () => {
   it('should display list of games', async () => {
     render(<Scoreboard />);
 

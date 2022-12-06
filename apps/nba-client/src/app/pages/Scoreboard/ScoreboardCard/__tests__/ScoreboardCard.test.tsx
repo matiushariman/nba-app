@@ -1,7 +1,7 @@
 import ScoreboardCard from '../ScoreboardCard';
 import { render } from '../../../../utils/testUtils';
 
-describe('components/Scoreboard/ScoreboardCard', () => {
+describe('pages/Scoreboard/ScoreboardCard', () => {
   const homeTeam = {
     teamId: 0,
     teamName: 'Celtics',

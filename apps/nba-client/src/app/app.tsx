@@ -1,11 +1,20 @@
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+
 import Header from './components/Header';
-import Scoreboard from './components/Scoreboard';
+import Scoreboard from './pages/Scoreboard';
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Scoreboard />,
+  },
+]);
 
 export function App() {
   return (
     <>
       <Header />
-      <Scoreboard />
+      <RouterProvider router={router} />
     </>
   );
 }

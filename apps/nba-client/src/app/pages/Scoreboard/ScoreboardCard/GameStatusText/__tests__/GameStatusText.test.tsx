@@ -2,7 +2,7 @@ import GameStatusText from '..';
 
 import { render, screen } from '../../../../../utils/testUtils';
 
-describe('components/Scoreboard/ScoreboardCard/GameStatusText', () => {
+describe('pages/Scoreboard/ScoreboardCard/GameStatusText', () => {
   it('should render FINAL if gameStatusText contains final', () => {
     render(<GameStatusText gameStatusText="final" />);
 
