@@ -6,7 +6,7 @@ const Scoreboard = () => {
 
   return (
     <div className="container mx-auto">
-      <div className="grid pt-6 grid-cols-2 gap-6">
+      <div className="grid md:pt-6 md:grid-cols-2 gap-6">
         {isLoading
           ? null
           : data?.scoreboard.games.map((game) => (
