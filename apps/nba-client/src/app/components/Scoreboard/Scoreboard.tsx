@@ -7,9 +7,9 @@ const Scoreboard = () => {
   return (
     <div className="container mx-auto">
       <div className="grid md:pt-6 md:grid-cols-2 gap-6">
-        {isLoading
-          ? null
-          : data?.scoreboard.games.map((game) => (
+        {isLoading ? null : (
+          <div aria-label="today's games">
+            {data?.scoreboard.games.map((game) => (
               <ScoreboardCard
                 key={game.gameId}
                 homeTeam={game.homeTeam}
@@ -17,6 +17,8 @@ const Scoreboard = () => {
                 gameStatusText={game.gameStatusText}
               />
             ))}
+          </div>
+        )}
       </div>
     </div>
   );

@@ -5,8 +5,8 @@ describe('components/Scoreboard', () => {
   it('should display list of games', async () => {
     render(<Scoreboard />);
 
-    const todaysGames = await screen.findAllByLabelText(/today's game/i);
+    const todaysGames = await screen.findByLabelText(/today's games/i);
 
-    expect(todaysGames.length).toEqual(3);
+    expect(todaysGames).toBeVisible();
   });
 });
