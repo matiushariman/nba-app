@@ -1,8 +1,8 @@
 import LiveStatus from '..';
 
-import { render } from '../../../../../../utils/testUtils';
+import { render } from '../../../../../../../utils/testUtils';
 
-describe('pages/Scoreboard/GameCard/GameStatusText/LiveStatus', () => {
+describe('pages/games/GameCard/Scoreboard/GameCard/GameStatusText/LiveStatus', () => {
   it('should render LiveStatus that matches snapshot', () => {
     const { baseElement } = render(<LiveStatus />);
 

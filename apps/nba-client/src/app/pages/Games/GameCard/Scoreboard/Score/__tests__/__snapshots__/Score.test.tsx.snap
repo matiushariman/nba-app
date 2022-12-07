@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`pages/Scoreboard/GameCard/Score should render Score that matches snapshot 1`] = `
+exports[`pages/games/GameCard/Scoreboard/GameCard/Score should render Score that matches snapshot 1`] = `
 <body>
   <div>
     <div

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`pages/Scoreboard/GameCard/GameStatusText/LiveStatus should render LiveStatus that matches snapshot 1`] = `
+exports[`pages/games/GameCard/Scoreboard/GameCard/GameStatusText/LiveStatus should render LiveStatus that matches snapshot 1`] = `
 <body>
   <div>
     <span

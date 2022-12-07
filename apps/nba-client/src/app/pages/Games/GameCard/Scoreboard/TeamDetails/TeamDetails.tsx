@@ -1,11 +1,6 @@
-import type { ScoreboardTeamDetailsProps } from './ScoreboardTeamDetails.types';
+import type { TeamDetailsProps } from './TeamDetails.types';
 
-const ScoreboardTeamDetails = ({
-  teamName,
-  teamId,
-  wins,
-  losses,
-}: ScoreboardTeamDetailsProps) => (
+const TeamDetails = ({ teamName, teamId, wins, losses }: TeamDetailsProps) => (
   <div className="grid gap-1 justify-center">
     <img
       src={`https://cdn.nba.com/logos/nba/${teamId}/global/L/logo.svg`}
@@ -21,4 +16,4 @@ const ScoreboardTeamDetails = ({
   </div>
 );
 
-export default ScoreboardTeamDetails;
+export default TeamDetails;

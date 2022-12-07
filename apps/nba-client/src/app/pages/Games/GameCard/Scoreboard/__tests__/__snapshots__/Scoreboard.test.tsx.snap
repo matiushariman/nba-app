@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pages/Games/GameCard/Scoreboard should render Scoreboard that matches snapshot 1`] = `
+<body>
+  <div>
+    <div
+      class="pt-2 pb-2 pl-4 pr-4 flex gap-2"
+    >
+      <div
+        class="flex gap-3 items-center"
+      >
+        <div
+          class="grid gap-1 justify-center"
+        >
+          <img
+            alt="Lakers logo"
+            height="72"
+            loading="lazy"
+            src="https://cdn.nba.com/logos/nba/1/global/L/logo.svg"
+            width="72"
+          />
+          <div>
+            <p
+              class="text-center"
+            >
+              Lakers
+            </p>
+            <p
+              class="text-center text-gray-500 text-sm"
+            >
+              0 - 82
+            </p>
+          </div>
+        </div>
+        <div
+          class="w-[52px]"
+        >
+          <p
+            class="font-bold text-3xl"
+          >
+            92
+          </p>
+        </div>
+      </div>
+      <div
+        class="flex-grow flex justify-center"
+      >
+        <p
+          class="text-sm uppercase font-bold"
+        >
+          FINAL
+        </p>
+      </div>
+      <div
+        class="flex gap-3 items-center"
+      >
+        <div
+          class="w-[52px]"
+        >
+          <p
+            class="font-bold text-3xl"
+          >
+            131
+          </p>
+        </div>
+        <div
+          class="grid gap-1 justify-center"
+        >
+          <img
+            alt="Celtics logo"
+            height="72"
+            loading="lazy"
+            src="https://cdn.nba.com/logos/nba/0/global/L/logo.svg"
+            width="72"
+          />
+          <div>
+            <p
+              class="text-center"
+            >
+              Celtics
+            </p>
+            <p
+              class="text-center text-gray-500 text-sm"
+            >
+              82 - 0
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;

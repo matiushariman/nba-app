@@ -1,6 +1,6 @@
 import type { Team } from '@nba-app/types-nba';
 
-export type ScoreboardTeamDetailsProps = Pick<
+export type TeamDetailsProps = Pick<
   Team,
   'teamName' | 'teamId' | 'wins' | 'losses'
 >;
