@@ -1,6 +1,6 @@
 import axios, { AxiosInstance } from 'axios';
 
-import type { GetGamesRes } from '@nba-app/types-nba';
+import type { GetGamesRes, GetGameByIdRes } from '@nba-app/types-nba';
 
 export class NbaApi {
   private readonly axiosInstance: AxiosInstance;
@@ -13,5 +13,9 @@ export class NbaApi {
 
   async getGames() {
     return axios.get<GetGamesRes>('/api/games');
+  }
+
+  async getGameById(id: string) {
+    return axios.get<GetGameByIdRes>(`/api/games/${id}`);
   }
 }
