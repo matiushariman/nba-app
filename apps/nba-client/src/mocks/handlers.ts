@@ -1,9 +1,9 @@
 import { rest } from 'msw';
 
-import type { GetScoreboardRes } from '@nba-app/types-nba';
+import type { GetGamesRes } from '@nba-app/types-nba';
 
 export const handlers = [
-  rest.get<GetScoreboardRes>('/api/scoreboard', (req, res, ctx) => {
+  rest.get<GetGamesRes>('/api/games', (req, res, ctx) => {
     return res(
       ctx.json({
         meta: {
