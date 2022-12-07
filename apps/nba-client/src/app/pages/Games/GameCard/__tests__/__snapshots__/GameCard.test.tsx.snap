@@ -4,94 +4,104 @@ exports[`pages/Games/GameCard should render GameCard that matches snapshot 1`] =
 <body>
   <div>
     <div
-      class="flex shadow-md cursor-pointer items-center bg-white rounded md:divide-x items-center"
+      class="flex shadow-md items-stretch bg-white rounded md:divide-x"
     >
       <div
-        class="flex-grow md:w-[60%] md:flex-grow-0"
+        class="flex flex-col flex-grow md:w-[60%] md:flex-grow-0"
       >
         <div
-          class="pt-2 pb-2 pl-4 pr-4 flex gap-2 items-center"
+          class="flex-grow flex flex-col divide-y"
         >
           <div
-            class="flex gap-3 items-center"
+            class="pt-2 pb-2 pl-4 pr-4 flex gap-2 items-center flex-grow"
           >
             <div
-              class="grid gap-1 justify-center"
+              class="flex gap-3 items-center"
             >
-              <img
-                alt="Lakers logo"
-                height="64"
-                loading="lazy"
-                src="https://cdn.nba.com/logos/nba/1/global/L/logo.svg"
-                width="64"
-              />
-              <div>
+              <div
+                class="grid gap-1 justify-center"
+              >
+                <img
+                  alt="Lakers logo"
+                  height="64"
+                  loading="lazy"
+                  src="https://cdn.nba.com/logos/nba/1/global/L/logo.svg"
+                  width="64"
+                />
+                <div>
+                  <p
+                    class="text-center text-sm"
+                  >
+                    Lakers
+                  </p>
+                  <p
+                    class="text-center text-gray-500 text-xs"
+                  >
+                    0 - 82
+                  </p>
+                </div>
+              </div>
+              <div
+                class="w-[52px]"
+              >
                 <p
-                  class="text-center text-sm"
+                  class="font-bold text-2xl"
                 >
-                  Lakers
-                </p>
-                <p
-                  class="text-center text-gray-500 text-xs"
-                >
-                  0 - 82
+                  92
                 </p>
               </div>
             </div>
             <div
-              class="w-[52px]"
+              class="flex-grow flex justify-center"
             >
               <p
-                class="font-bold text-2xl"
+                class="text-sm uppercase font-bold"
               >
-                92
-              </p>
-            </div>
-          </div>
-          <div
-            class="flex-grow flex justify-center"
-          >
-            <p
-              class="text-sm uppercase font-bold"
-            >
-              FINAL
-            </p>
-          </div>
-          <div
-            class="flex gap-3 items-center"
-          >
-            <div
-              class="w-[52px]"
-            >
-              <p
-                class="font-bold text-2xl"
-              >
-                131
+                FINAL
               </p>
             </div>
             <div
-              class="grid gap-1 justify-center"
+              class="flex gap-3 items-center"
             >
-              <img
-                alt="Celtics logo"
-                height="64"
-                loading="lazy"
-                src="https://cdn.nba.com/logos/nba/0/global/L/logo.svg"
-                width="64"
-              />
-              <div>
+              <div
+                class="w-[52px]"
+              >
                 <p
-                  class="text-center text-sm"
+                  class="font-bold text-2xl"
                 >
-                  Celtics
-                </p>
-                <p
-                  class="text-center text-gray-500 text-xs"
-                >
-                  82 - 0
+                  131
                 </p>
               </div>
+              <div
+                class="grid gap-1 justify-center"
+              >
+                <img
+                  alt="Celtics logo"
+                  height="64"
+                  loading="lazy"
+                  src="https://cdn.nba.com/logos/nba/0/global/L/logo.svg"
+                  width="64"
+                />
+                <div>
+                  <p
+                    class="text-center text-sm"
+                  >
+                    Celtics
+                  </p>
+                  <p
+                    class="text-center text-gray-500 text-xs"
+                  >
+                    82 - 0
+                  </p>
+                </div>
+              </div>
             </div>
+          </div>
+          <div
+            class="text-center flex items-center justify-center pt-2 pb-2 pl-4 pr-4 uppercase text-sm font-bold text-gray-800 bg-gray-50"
+            role="button"
+          >
+            Game Details
           </div>
         </div>
       </div>

@@ -1,5 +1,13 @@
+import userEvent from '@testing-library/user-event';
 import Scoreboard from '..';
-import { render } from '../../../../../utils/testUtils';
+import { render, screen } from '../../../../../utils/testUtils';
+
+const mockNavigate = jest.fn();
+
+jest.mock('react-router-dom', () => ({
+  ...(jest.requireActual('react-router-dom') as any),
+  useNavigate: () => mockNavigate,
+}));
 
 describe('pages/Games/GameCard/Scoreboard', () => {
   const homeTeam = {
@@ -17,15 +25,22 @@ describe('pages/Games/GameCard/Scoreboard', () => {
     score: 92,
   };
 
-  it('should render Scoreboard that matches snapshot', () => {
-    const { baseElement } = render(
+  it('should call navigate on game details button click', async () => {
+    render(
       <Scoreboard
         homeTeam={homeTeam}
         awayTeam={awayTeam}
         gameStatusText="FINAL"
+        gameId="123"
       />
     );
 
-    expect(baseElement).toMatchSnapshot();
+    const gameDetailsBtn = screen.getByRole('button', {
+      name: /game details/i,
+    });
+
+    await userEvent.click(gameDetailsBtn);
+
+    expect(mockNavigate).toHaveBeenCalled();
   });
 });
