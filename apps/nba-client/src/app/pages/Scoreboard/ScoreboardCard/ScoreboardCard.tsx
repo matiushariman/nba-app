@@ -9,7 +9,7 @@ const ScoreboardCard = ({
   awayTeam,
   gameStatusText,
 }: ScoreboardCardProps) => (
-  <div className="pt-2 pb-2 pl-4 pr-4 flex gap-2 shadow-md cursor-pointer items-center">
+  <div className="pt-2 pb-2 pl-4 pr-4 flex gap-2 shadow-md cursor-pointer items-center bg-white rounded">
     <div className="flex gap-3 items-center">
       <ScoreboardTeamDetails
         teamId={awayTeam.teamId}
