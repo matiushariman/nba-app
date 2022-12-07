@@ -11,7 +11,7 @@ import '../../styles.css';
 
 const queryClient = new QueryClient();
 
-const AllTheProviders: FC<{ children: ReactNode }> = ({ children }) => {
+export const AllTheProviders: FC<{ children: ReactNode }> = ({ children }) => {
   const routes: RouteObject[] = [
     {
       path: '/',
@@ -34,4 +34,4 @@ const customRender = (
 
 export * from '@testing-library/react';
 
-export { customRender as render };
+export { customRender as render, AllTheProviders as wrapper };

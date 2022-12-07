@@ -12,7 +12,7 @@ const router = createBrowserRouter([
     element: <Games />,
   },
   {
-    path: 'game-details/:id',
+    path: 'game-details/:gameId',
     element: (
       <Suspense fallback={null}>
         <GameDetails />

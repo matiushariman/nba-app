@@ -1,13 +1,14 @@
-import { fetchGames } from '../useGetGames';
+import useGetGames from '..';
 
-jest.mock('../../api', () => ({
-  getGames: async () => ({
-    data: [],
-  }),
-}));
+import { mockGames } from '../../../../mocks/games/handlers';
+import { renderHook, wrapper, waitFor } from '../../../utils/testUtils';
 
-describe('hooks/useGetGames/fetchGames', () => {
+describe('hooks/useGetGames', () => {
   it('should return games response', async () => {
-    expect(await fetchGames()).toEqual([]);
+    const { result } = renderHook(() => useGetGames(), { wrapper });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true));
+
+    expect(result.current.data).toEqual(mockGames);
   });
 });

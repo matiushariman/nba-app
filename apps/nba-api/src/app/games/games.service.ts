@@ -2,7 +2,11 @@ import { Injectable } from '@nestjs/common';
 import { HttpService } from '@nestjs/axios';
 import { catchError, firstValueFrom } from 'rxjs';
 
-import type { GetGameByIdRes, GetGamesRes } from '@nba-app/types-nba';
+import type {
+  GetGameByIdRes,
+  GetGamesRes,
+  GetGameByIdReq,
+} from '@nba-app/types-nba';
 
 @Injectable()
 export class GamesService {
@@ -24,7 +28,7 @@ export class GamesService {
     return data;
   }
 
-  async getGameById(id: string): Promise<GetGameByIdRes> {
+  async getGameById(gameId: GetGameByIdReq['gameId']): Promise<GetGameByIdRes> {
     const { data } = await firstValueFrom(
       this.httpService
         .get<GetGamesRes>(
@@ -38,7 +42,7 @@ export class GamesService {
     );
 
     return data.scoreboard.games.find(
-      (currentGame) => currentGame.gameId === id
+      (currentGame) => currentGame.gameId === gameId
     );
   }
 }

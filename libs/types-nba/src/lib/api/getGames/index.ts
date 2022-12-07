@@ -79,4 +79,8 @@ export interface GetGamesRes {
   scoreboard: Scoreboard;
 }
 
+export interface GetGameByIdReq {
+  gameId: string;
+}
+
 export type GetGameByIdRes = Game;
