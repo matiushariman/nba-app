@@ -17,12 +17,38 @@ describe('pages/Games/GameCard', () => {
     score: 92,
   };
 
+  const gameLeaders = {
+    homeLeaders: {
+      personId: 202691,
+      name: 'Klay Thompson',
+      jerseyNum: '11',
+      position: 'G',
+      teamTricode: 'GSW',
+      playerSlug: 'klay-thompson',
+      points: 17,
+      rebounds: 1,
+      assists: 1,
+    },
+    awayLeaders: {
+      personId: 1630188,
+      name: 'Jalen Smith',
+      jerseyNum: '25',
+      position: 'FC',
+      teamTricode: 'IND',
+      playerSlug: 'jalen-smith',
+      points: 9,
+      rebounds: 6,
+      assists: 1,
+    },
+  };
+
   it('should render GameCard that matches snapshot', () => {
     const { baseElement } = render(
       <GameCard
         homeTeam={homeTeam}
         awayTeam={awayTeam}
         gameStatusText="FINAL"
+        gameLeaders={gameLeaders}
       />
     );
 

@@ -5,13 +5,13 @@ const TeamDetails = ({ teamName, teamId, wins, losses }: TeamDetailsProps) => (
     <img
       src={`https://cdn.nba.com/logos/nba/${teamId}/global/L/logo.svg`}
       loading="lazy"
-      width={72}
-      height={72}
+      width={64}
+      height={64}
       alt={`${teamName} logo`}
     />
     <div>
-      <p className="text-center">{teamName}</p>
-      <p className="text-center text-gray-500 text-sm">{`${wins} - ${losses}`}</p>
+      <p className="text-center text-sm">{teamName}</p>
+      <p className="text-center text-gray-500 text-xs">{`${wins} - ${losses}`}</p>
     </div>
   </div>
 );

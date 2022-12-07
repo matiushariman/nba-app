@@ -25,13 +25,13 @@ export interface Team {
   periods: Period[];
 }
 
-interface Leaders {
+export interface Leaders {
   personId: number;
   name: string;
   jerseyNum: string;
   position: string;
   teamTricode: string;
-  playerSlug: null;
+  playerSlug: null | string;
   points: number;
   rebounds: number;
   assists: number;

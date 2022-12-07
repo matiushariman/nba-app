@@ -17,6 +17,7 @@ const Games = () => {
               homeTeam={game.homeTeam}
               awayTeam={game.awayTeam}
               gameStatusText={game.gameStatusText}
+              gameLeaders={game.gameLeaders}
             />
           ))}
         </div>
