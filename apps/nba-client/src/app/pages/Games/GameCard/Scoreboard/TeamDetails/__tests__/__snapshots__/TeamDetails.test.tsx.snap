@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pages/games/GameCard/Scoreboard/GameCard/TeamDetails should render TeamDetails that matches snapshot 1`] = `
+<body>
+  <div>
+    <div
+      class="grid gap-1 justify-center"
+    >
+      <img
+        alt="Celtics logo"
+        height="64"
+        loading="lazy"
+        src="https://cdn.nba.com/logos/nba/123/global/L/logo.svg"
+        width="64"
+      />
+      <div>
+        <p
+          class="text-center text-sm"
+        >
+          Celtics
+        </p>
+        <p
+          class="text-center text-gray-500 text-xs"
+        >
+          82 - 0
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+`;

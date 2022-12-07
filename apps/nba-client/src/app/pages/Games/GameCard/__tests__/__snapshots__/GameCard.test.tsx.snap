@@ -1,0 +1,268 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pages/Games/GameCard should render GameCard that matches snapshot 1`] = `
+<body>
+  <div>
+    <div
+      class="flex shadow-md cursor-pointer items-center bg-white rounded divide-x items-center"
+    >
+      <div
+        class="w-[60%]"
+      >
+        <div
+          class="pt-2 pb-2 pl-4 pr-4 flex gap-2 items-center"
+        >
+          <div
+            class="flex gap-3 items-center"
+          >
+            <div
+              class="grid gap-1 justify-center"
+            >
+              <img
+                alt="Lakers logo"
+                height="64"
+                loading="lazy"
+                src="https://cdn.nba.com/logos/nba/1/global/L/logo.svg"
+                width="64"
+              />
+              <div>
+                <p
+                  class="text-center text-sm"
+                >
+                  Lakers
+                </p>
+                <p
+                  class="text-center text-gray-500 text-xs"
+                >
+                  0 - 82
+                </p>
+              </div>
+            </div>
+            <div
+              class="w-[52px]"
+            >
+              <p
+                class="font-bold text-2xl"
+              >
+                92
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex-grow flex justify-center"
+          >
+            <p
+              class="text-sm uppercase font-bold"
+            >
+              FINAL
+            </p>
+          </div>
+          <div
+            class="flex gap-3 items-center"
+          >
+            <div
+              class="w-[52px]"
+            >
+              <p
+                class="font-bold text-2xl"
+              >
+                131
+              </p>
+            </div>
+            <div
+              class="grid gap-1 justify-center"
+            >
+              <img
+                alt="Celtics logo"
+                height="64"
+                loading="lazy"
+                src="https://cdn.nba.com/logos/nba/0/global/L/logo.svg"
+                width="64"
+              />
+              <div>
+                <p
+                  class="text-center text-sm"
+                >
+                  Celtics
+                </p>
+                <p
+                  class="text-center text-gray-500 text-xs"
+                >
+                  82 - 0
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex-grow"
+      >
+        <div
+          class="pt-4 pb-2 pl-4 pr-4 grid gap-2"
+        >
+          <p
+            class="font-bold text-sm uppercase"
+          >
+            Game Leaders
+          </p>
+          <div>
+            <table
+              class="table-auto w-full"
+            >
+              <thead
+                class="border-b"
+              >
+                <tr>
+                  <th
+                    class="w-[60%]"
+                  />
+                  <th
+                    class="text-xs uppercase text-right"
+                  >
+                    Pts
+                  </th>
+                  <th
+                    class="text-xs uppercase text-right"
+                  >
+                    Reb
+                  </th>
+                  <th
+                    class="text-xs uppercase text-right"
+                  >
+                    Ast
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div
+                      class="flex items-center pt-1 pb-1"
+                    >
+                      <div
+                        class="mr-2 w-[24px] h-[24px]"
+                      >
+                        <img
+                          alt="Jalen Smith headshot"
+                          class="mr-2 bg-gray-300 shadow-sm rounded-full w-full h-full object-cover"
+                          loading="lazy"
+                          src="https://cdn.nba.com/headshots/nba/latest/260x190/1630188.png"
+                        />
+                      </div>
+                      <div
+                        class="grid"
+                      >
+                        <p
+                          class="text-sm"
+                        >
+                          Jalen Smith
+                        </p>
+                        <div
+                          class="grid grid-cols-3 divide-x gap-2"
+                        >
+                          <p
+                            class="text-xs"
+                          >
+                            IND
+                          </p>
+                          <p
+                            class="text-xs"
+                          >
+                            #25
+                          </p>
+                          <p
+                            class="text-xs"
+                          >
+                            FC
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td
+                    class="text-sm text-right"
+                  >
+                    9
+                  </td>
+                  <td
+                    class="text-sm text-right"
+                  >
+                    6
+                  </td>
+                  <td
+                    class="text-sm text-right"
+                  >
+                    1
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div
+                      class="flex items-center pt-1 pb-1"
+                    >
+                      <div
+                        class="mr-2 w-[24px] h-[24px]"
+                      >
+                        <img
+                          alt="Klay Thompson headshot"
+                          class="mr-2 bg-gray-300 shadow-sm rounded-full w-full h-full object-cover"
+                          loading="lazy"
+                          src="https://cdn.nba.com/headshots/nba/latest/260x190/202691.png"
+                        />
+                      </div>
+                      <div
+                        class="grid"
+                      >
+                        <p
+                          class="text-sm"
+                        >
+                          Klay Thompson
+                        </p>
+                        <div
+                          class="grid grid-cols-3 divide-x gap-2"
+                        >
+                          <p
+                            class="text-xs"
+                          >
+                            GSW
+                          </p>
+                          <p
+                            class="text-xs"
+                          >
+                            #11
+                          </p>
+                          <p
+                            class="text-xs"
+                          >
+                            G
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td
+                    class="text-sm text-right"
+                  >
+                    17
+                  </td>
+                  <td
+                    class="text-sm text-right"
+                  >
+                    1
+                  </td>
+                  <td
+                    class="text-sm text-right"
+                  >
+                    1
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;

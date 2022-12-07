@@ -1,12 +1,12 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import Header from './components/Header';
-import Scoreboard from './pages/Scoreboard';
+import Games from './pages/Games';
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Scoreboard />,
+    element: <Games />,
   },
 ]);
 

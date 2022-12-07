@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pages/Games/GameCard/GameLeaders/GameLeaderDetails should render GameLeaderDetails that matches snapshot 1`] = `
+<body>
+  <div>
+    <div
+      class="flex items-center pt-1 pb-1"
+    >
+      <div
+        class="mr-2 w-[24px] h-[24px]"
+      >
+        <img
+          alt="Jayson Tatum headshot"
+          class="mr-2 bg-gray-300 shadow-sm rounded-full w-full h-full object-cover"
+          loading="lazy"
+          src="https://cdn.nba.com/headshots/nba/latest/260x190/1.png"
+        />
+      </div>
+      <div
+        class="grid"
+      >
+        <p
+          class="text-sm"
+        >
+          Jayson Tatum
+        </p>
+        <div
+          class="grid grid-cols-3 divide-x gap-2"
+        >
+          <p
+            class="text-xs"
+          >
+            BOS
+          </p>
+          <p
+            class="text-xs"
+          >
+            #0
+          </p>
+          <p
+            class="text-xs"
+          >
+            SF
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;

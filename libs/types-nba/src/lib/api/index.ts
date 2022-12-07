@@ -1,1 +1,1 @@
-export * from './getScoreboard';
+export * from './getGames';

@@ -1,9 +1,9 @@
 import { Module } from '@nestjs/common';
 
-import { ScoreboardModule } from './scoreboard/scoreboard.module';
+import { GamesModule } from './games/games.module';
 
 @Module({
-  imports: [ScoreboardModule],
+  imports: [GamesModule],
   controllers: [],
   providers: [],
 })

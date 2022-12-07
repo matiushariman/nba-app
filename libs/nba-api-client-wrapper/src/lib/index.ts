@@ -1,6 +1,6 @@
 import axios, { AxiosInstance } from 'axios';
 
-import type { GetScoreboardRes } from '@nba-app/types-nba';
+import type { GetGamesRes } from '@nba-app/types-nba';
 
 export class NbaApi {
   private readonly axiosInstance: AxiosInstance;
@@ -11,7 +11,7 @@ export class NbaApi {
     });
   }
 
-  async getScoreboard() {
-    return axios.get<GetScoreboardRes>('/api/scoreboard');
+  async getGames() {
+    return axios.get<GetGamesRes>('/api/games');
   }
 }
