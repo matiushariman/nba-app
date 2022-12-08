@@ -1,16 +1,17 @@
 import { useParams } from 'react-router-dom';
 
+import GameInfo from './GameInfo';
 import useGetGame from '../../hooks/useGetGame';
 
 const GameDetails = () => {
   const { gameId = '' } = useParams<{ gameId: string }>();
-  const { isLoading, data } = useGetGame({ gameId });
+  const { isLoading } = useGetGame({ gameId });
 
   if (isLoading) {
     return null;
   }
 
-  return <p>{data?.homeTeam.teamName}</p>;
+  return <GameInfo />;
 };
 
 export default GameDetails;

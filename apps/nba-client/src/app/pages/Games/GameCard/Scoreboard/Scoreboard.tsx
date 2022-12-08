@@ -1,7 +1,8 @@
 import { useNavigate } from 'react-router-dom';
+
 import TeamDetails from './TeamDetails';
 import Score from './Score';
-import GameStatusText from './GameStatusText';
+import GameStatusText from '../../../../components/GameStatusText';
 
 import type { ScoreboardProps } from './Scoreboard.types';
 

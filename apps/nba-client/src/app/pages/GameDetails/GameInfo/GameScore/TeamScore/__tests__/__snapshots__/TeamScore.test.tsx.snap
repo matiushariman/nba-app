@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pages/GameDetails/GameInfo/GameScore/TeamScore should render TeamScore that matches snapshot 1`] = `
+<body>
+  <div>
+    <div
+      class="w-[72px]"
+    >
+      <p
+        class="text-3xl font-bold text-center"
+      >
+        100
+      </p>
+    </div>
+  </div>
+</body>
+`;

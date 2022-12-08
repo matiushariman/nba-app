@@ -1,0 +1,1 @@
+export const GET_GAME_BY_ID_QUERY_KEY = 'GET_GAME_BY_ID';

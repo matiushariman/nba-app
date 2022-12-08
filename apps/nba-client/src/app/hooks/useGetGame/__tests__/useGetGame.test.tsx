@@ -1,4 +1,4 @@
-import useGetGame from '..';
+import useGetGame from '../useGetGame';
 
 import { mockGames } from '../../../../mocks/games/handlers';
 import { renderHook, wrapper, waitFor } from '../../../utils/testUtils';
