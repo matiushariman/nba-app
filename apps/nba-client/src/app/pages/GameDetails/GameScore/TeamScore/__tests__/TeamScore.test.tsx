@@ -1,4 +1,4 @@
-import { render } from '../../../../../../utils/testUtils';
+import { render } from '../../../../../utils/testUtils';
 
 import TeamScore from '..';
 

@@ -2,6 +2,7 @@ import { useParams } from 'react-router-dom';
 
 import GameInfo from './GameInfo';
 import useGetGame from '../../hooks/useGetGame';
+import GameScore from './GameScore';
 
 const GameDetails = () => {
   const { gameId = '' } = useParams<{ gameId: string }>();
@@ -11,7 +12,12 @@ const GameDetails = () => {
     return null;
   }
 
-  return <GameInfo />;
+  return (
+    <>
+      <GameScore />
+      <GameInfo />
+    </>
+  );
 };
 
 export default GameDetails;
