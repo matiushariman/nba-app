@@ -78,3 +78,9 @@ export interface GetGamesRes {
   meta: Meta;
   scoreboard: Scoreboard;
 }
+
+export interface GetGameByIdReq {
+  gameId: string;
+}
+
+export type GetGameByIdRes = Game;

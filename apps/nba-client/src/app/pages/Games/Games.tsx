@@ -16,6 +16,7 @@ const Games = () => {
               key={game.gameId}
               homeTeam={game.homeTeam}
               awayTeam={game.awayTeam}
+              gameId={game.gameId}
               gameStatusText={game.gameStatusText}
               gameLeaders={game.gameLeaders}
             />

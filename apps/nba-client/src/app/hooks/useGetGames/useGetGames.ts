@@ -9,7 +9,7 @@ export const fetchGames = async () => {
 };
 
 const useGetGames = () => {
-  return useQuery('GET_SCOREBOARD', fetchGames);
+  return useQuery('GET_GAMES', fetchGames);
 };
 
 export default useGetGames;

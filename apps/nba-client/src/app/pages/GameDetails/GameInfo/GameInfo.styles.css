@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .hero-layer {
+    @apply absolute object-cover w-full h-full top-0 right-0 bottom-0 left-0;
+  }
+}
+
+.hero-overlay {
+  background: linear-gradient(90deg,#000 -3.8%,transparent 52%),linear-gradient(180deg,transparent,#000 78.7%);
+  z-index: 1;
+}

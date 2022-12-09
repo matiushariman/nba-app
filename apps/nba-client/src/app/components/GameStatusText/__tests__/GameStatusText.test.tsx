@@ -1,8 +1,8 @@
 import GameStatusText from '..';
 
-import { render, screen } from '../../../../../utils/testUtils';
+import { render, screen } from '../../../utils/testUtils';
 
-describe('pages/games/GameCard/Scoreboard/GameCard/GameStatusText', () => {
+describe('components/GameStatusText', () => {
   it('should render FINAL if gameStatusText contains final', () => {
     render(<GameStatusText gameStatusText="final" />);
 
