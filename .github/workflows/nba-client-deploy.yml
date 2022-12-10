@@ -1,4 +1,4 @@
-name: build-client
+name: deploy-nba-client
 
 on:
   push:
