@@ -1,4 +1,4 @@
-name: build-client
+name: test-nba-client
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - main
     paths:
       - 'apps/nba-client/**'
-      - '.github/workflows/nba-client.yml'
+      - '.github/workflows/nba-client-test.yml'
 
 jobs:
   setup:
@@ -35,4 +35,9 @@ jobs:
         with:
           path: '**/node_modules'
           key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
-      - run: yarn test:client
+      - name: run unit test
+        run: yarn test:client
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v2
+        with:
+          files: ./coverage/apps/nba-client/index.html
