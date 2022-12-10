@@ -51,5 +51,5 @@ jobs:
           yarn playwright install
       - run: yarn test:client-e2e
         env:
-          E2E_BASE_URL: 'https://nba.matiushariman.com/'
+          E2E_BASE_URL: ${{ secrets.E2E_BASE_URL }}
 
