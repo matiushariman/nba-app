@@ -33,8 +33,28 @@ jobs:
           path: '**/node_modules'
           key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
       - run: yarn test:client
+  build:
+    needs: [   unit-test ]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+          cache: 'yarn'
+      - name: Use cached node modules
+        uses: actions/cache@v3
+        with:
+          path: '**/node_modules'
+          key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
+      - name: Cache build
+        uses: actions/cache@v3
+        with:
+          path: '**/dist/apps/nba-client'
+          key: ${{ runner.os }}-modules-${{ hashFiles('**/nba-client') }}
+      - run: yarn run build:client
   e2e-test:
-    needs: [ setup ]
+    needs: [ build ]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
