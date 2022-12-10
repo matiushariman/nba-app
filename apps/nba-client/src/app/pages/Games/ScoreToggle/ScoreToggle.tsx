@@ -17,7 +17,7 @@ const ScoreToggle = () => {
         className={`${isScoreHidden ? 'bg-teal-600' : 'bg-gray-400'}
           relative inline-flex h-[28] w-[60px] shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2  focus-visible:ring-white focus-visible:ring-opacity-75`}
       >
-        <span className="sr-only">Use setting</span>
+        <span className="sr-only">Hide Score</span>
         <span
           aria-hidden="true"
           className={`${isScoreHidden ? 'translate-x-8' : 'translate-x-0'}
