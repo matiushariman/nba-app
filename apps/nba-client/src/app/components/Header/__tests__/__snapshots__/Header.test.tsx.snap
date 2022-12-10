@@ -15,6 +15,7 @@ exports[`components/Header should render Header that matches snapshot 1`] = `
       <a
         class="text-sm"
         href="https://github.com/matiushariman/nba-app"
+        rel="noreferrer"
         target="_blank"
       >
         <img
