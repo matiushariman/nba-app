@@ -1,3 +1,5 @@
+[![codecov](https://codecov.io/gh/matiushariman/nba-app/branch/main/graph/badge.svg?token=UC95QG595M)](https://codecov.io/gh/matiushariman/nba-app)
+
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
