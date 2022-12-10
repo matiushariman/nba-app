@@ -4,15 +4,19 @@ exports[`pages/games/GameCard/Scoreboard/GameCard/TeamDetails should render Team
 <body>
   <div>
     <div
-      class="grid gap-1 justify-center"
+      class="grid gap-1"
     >
-      <img
-        alt="Celtics logo"
-        height="64"
-        loading="lazy"
-        src="https://cdn.nba.com/logos/nba/123/global/L/logo.svg"
-        width="64"
-      />
+      <div
+        class="flex justify-around"
+      >
+        <img
+          alt="Celtics logo"
+          height="52"
+          loading="lazy"
+          src="https://cdn.nba.com/logos/nba/123/global/L/logo.svg"
+          width="52"
+        />
+      </div>
       <div>
         <p
           class="text-center text-sm"
@@ -20,7 +24,7 @@ exports[`pages/games/GameCard/Scoreboard/GameCard/TeamDetails should render Team
           Celtics
         </p>
         <p
-          class="text-center text-gray-500 text-xs"
+          class="text-center text-gray-500 text-sm"
         >
           82 - 0
         </p>

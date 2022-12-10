@@ -4,6 +4,7 @@ import { QueryClient, QueryClientProvider } from 'react-query';
 import { ReactQueryDevtools } from 'react-query/devtools';
 
 import App from './app/app';
+import { shouldUseMock } from './app/utils/mockUtils';
 import './styles.css';
 
 export const queryClient = new QueryClient();
@@ -13,7 +14,7 @@ const root = ReactDOM.createRoot(
 );
 
 // Start the mocking conditionally.
-if (process.env['NODE_ENV'] !== 'development') {
+if (shouldUseMock) {
   // eslint-disable-next-line @typescript-eslint/no-var-requires
   const { worker } = require('./mocks/browser');
   worker.start();

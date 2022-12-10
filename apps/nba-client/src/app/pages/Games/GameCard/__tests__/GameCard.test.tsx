@@ -49,6 +49,8 @@ describe('pages/Games/GameCard', () => {
         awayTeam={awayTeam}
         gameStatusText="FINAL"
         gameLeaders={gameLeaders}
+        gameStatus={3}
+        gameId="123"
       />
     );
 

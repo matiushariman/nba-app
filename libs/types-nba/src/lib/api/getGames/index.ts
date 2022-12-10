@@ -48,10 +48,18 @@ interface PbOdds {
   suspended: number;
 }
 
+export const GameStatusEnum = {
+  pregame: 1,
+  livegame: 2,
+  endgame: 3,
+} as const;
+
+type ReverseMap<T> = T[keyof T];
+
 export interface Game {
   gameId: string;
   gameCode: string;
-  gameStatus: number;
+  gameStatus: ReverseMap<typeof GameStatusEnum>;
   gameStatusText: string;
   period: number;
   gameClock: string;

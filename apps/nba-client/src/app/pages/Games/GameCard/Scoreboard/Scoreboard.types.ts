@@ -1,3 +1,6 @@
 import type { GameCardProps } from '../GameCard.types';
 
-export type ScoreboardProps = Omit<GameCardProps, 'gameLeaders'>;
+export type ScoreboardProps = Omit<
+  GameCardProps,
+  'gameLeaders' | 'gameStatus' | 'gameStatusText'
+>;
