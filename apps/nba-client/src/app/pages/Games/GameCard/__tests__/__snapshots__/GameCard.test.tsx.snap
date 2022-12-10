@@ -19,15 +19,19 @@ exports[`pages/Games/GameCard should render GameCard that matches snapshot 1`] =
               class="flex gap-3 items-center"
             >
               <div
-                class="grid gap-1 justify-center"
+                class="grid gap-1"
               >
-                <img
-                  alt="Lakers logo"
-                  height="52"
-                  loading="lazy"
-                  src="https://cdn.nba.com/logos/nba/1/global/L/logo.svg"
-                  width="52"
-                />
+                <div
+                  class="flex justify-around"
+                >
+                  <img
+                    alt="Lakers logo"
+                    height="52"
+                    loading="lazy"
+                    src="https://cdn.nba.com/logos/nba/1/global/L/logo.svg"
+                    width="52"
+                  />
+                </div>
                 <div>
                   <p
                     class="text-center text-sm"
@@ -73,15 +77,19 @@ exports[`pages/Games/GameCard should render GameCard that matches snapshot 1`] =
                 </p>
               </div>
               <div
-                class="grid gap-1 justify-center"
+                class="grid gap-1"
               >
-                <img
-                  alt="Celtics logo"
-                  height="52"
-                  loading="lazy"
-                  src="https://cdn.nba.com/logos/nba/0/global/L/logo.svg"
-                  width="52"
-                />
+                <div
+                  class="flex justify-around"
+                >
+                  <img
+                    alt="Celtics logo"
+                    height="52"
+                    loading="lazy"
+                    src="https://cdn.nba.com/logos/nba/0/global/L/logo.svg"
+                    width="52"
+                  />
+                </div>
                 <div>
                   <p
                     class="text-center text-sm"
