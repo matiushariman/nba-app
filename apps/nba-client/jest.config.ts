@@ -7,6 +7,7 @@ export default {
     '^.+\\.[tj]sx?$': ['babel-jest', { presets: ['@nrwl/react/babel'] }],
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
+  collectCoverage: true,
   coverageDirectory: '../../coverage/apps/nba-client',
   coverageReporters: ['clover', 'json', 'lcov', ['text', { skipFull: true }]],
   setupFilesAfterEnv: ['./jest.setup.ts'],
