@@ -9,7 +9,7 @@ const Games = () => {
       {isLoading ? null : (
         <div
           aria-label="today's games"
-          className="grid md:pt-6 md:grid-cols-2 gap-6"
+          className="grid md:pt-6 md:pb-6 md:grid-cols-2 md:gap-4 divide-y md:divide-y-0"
         >
           {data?.scoreboard.games.map((game) => (
             <GameCard
