@@ -48,8 +48,8 @@ jobs:
           key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
       - name: Setup playwright
         run: |
-          npx playwright install
+          yarn playwright install
       - run: yarn test:client-e2e
         env:
-          E2E_BASE_URL: ${{ secrets.E2E_BASE_URL }}
+          E2E_BASE_URL: 'https://nba.matiushariman.com/'
 
