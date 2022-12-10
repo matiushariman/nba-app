@@ -1,30 +1,41 @@
 import GameCard from './GameCard';
+import ScoreToggle from './ScoreToggle';
 import useGetGames from '../../hooks/useGetGames';
+import { GameProvider } from '../../context/GameContext';
 
 const Games = () => {
   const { data, isLoading } = useGetGames();
 
+  if (isLoading) {
+    return null;
+  }
+
   return (
-    <div className="container mx-auto">
-      {isLoading ? null : (
-        <div
-          aria-label="today's games"
-          className="grid md:pt-6 md:pb-6 md:grid-cols-2 md:gap-4 divide-y md:divide-y-0"
-        >
-          {data?.scoreboard.games.map((game) => (
-            <GameCard
-              key={game.gameId}
-              homeTeam={game.homeTeam}
-              awayTeam={game.awayTeam}
-              gameId={game.gameId}
-              gameStatusText={game.gameStatusText}
-              gameLeaders={game.gameLeaders}
-              gameStatus={game.gameStatus}
-            />
-          ))}
+    <GameProvider>
+      <div className="container mx-auto pt-6 pb-6">
+        <div className="grid gap-4">
+          <div>
+            <ScoreToggle />
+          </div>
+          <div
+            aria-label="today's games"
+            className="grid md:grid-cols-2 md:gap-4 divide-y md:divide-y-0"
+          >
+            {data?.scoreboard.games.map((game) => (
+              <GameCard
+                key={game.gameId}
+                homeTeam={game.homeTeam}
+                awayTeam={game.awayTeam}
+                gameId={game.gameId}
+                gameStatusText={game.gameStatusText}
+                gameLeaders={game.gameLeaders}
+                gameStatus={game.gameStatus}
+              />
+            ))}
+          </div>
         </div>
-      )}
-    </div>
+      </div>
+    </GameProvider>
   );
 };
 

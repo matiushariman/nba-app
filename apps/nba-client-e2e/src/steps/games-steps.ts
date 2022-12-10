@@ -11,4 +11,12 @@ export class GamesSteps {
   async isListOfTodaysGamesVisible() {
     await expect(this.homePage.listOfTodaysGames).toBeVisible();
   }
+
+  async toggleHideScore() {
+    await this.homePage.scoreToggle.click();
+  }
+
+  async isScoreNotDisplayed() {
+    await expect(this.homePage.score).toHaveText('-');
+  }
 }

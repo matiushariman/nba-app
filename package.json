@@ -64,6 +64,7 @@
     "workerDirectory": "apps/nba-client/src"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.5",
     "@heroicons/react": "^2.0.13",
     "@nestjs/axios": "^1.0.0",
     "@nestjs/common": "^9.0.0",
