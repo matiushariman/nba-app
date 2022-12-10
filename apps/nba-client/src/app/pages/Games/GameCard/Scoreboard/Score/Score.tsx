@@ -1,9 +1,17 @@
-import { ScoreProps } from './Score.types';
+import { useGameStatusContext } from '../../../../../context/GameStatusContext';
 
-const Score = ({ score }: ScoreProps) => (
-  <div className="w-[52px]">
-    <p className="font-bold text-3xl text-center">{score}</p>
-  </div>
-);
+import type { ScoreProps } from './Score.types';
+
+const Score = ({ score }: ScoreProps) => {
+  const { hasGameStarted } = useGameStatusContext();
+
+  return (
+    <div className="w-[52px]">
+      <p className="font-bold text-3xl text-center">
+        {hasGameStarted ? score : '-'}
+      </p>
+    </div>
+  );
+};
 
 export default Score;
