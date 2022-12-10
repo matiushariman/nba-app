@@ -8,5 +8,6 @@ export default {
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
   coverageDirectory: '../../coverage/apps/nba-client',
+  coverageReporters: ['clover', 'json', 'lcov', ['text', { skipFull: true }]],
   setupFilesAfterEnv: ['./jest.setup.ts'],
 };
