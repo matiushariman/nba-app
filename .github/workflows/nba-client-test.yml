@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+    pull_request:
+      types: [ opened, edited ]
     paths:
       - 'apps/nba-client/**'
       - '.github/workflows/nba-client-test.yml'
