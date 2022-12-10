@@ -3,8 +3,8 @@ import type { TeamLogoProps } from './TeamLogo.types';
 const TeamLogo = ({
   teamId,
   teamName,
-  width = 64,
-  height = 64,
+  width = 52,
+  height = 52,
   mode = 'L',
 }: TeamLogoProps) => (
   <img

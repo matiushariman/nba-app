@@ -7,7 +7,7 @@ const TeamDetails = ({ teamName, teamId, wins, losses }: TeamDetailsProps) => (
     <TeamLogo teamName={teamName} teamId={teamId} />
     <div>
       <p className="text-center text-sm">{teamName}</p>
-      <p className="text-center text-gray-500 text-xs">{`${wins} - ${losses}`}</p>
+      <p className="text-center text-gray-500 text-sm">{`${wins} - ${losses}`}</p>
     </div>
   </div>
 );
