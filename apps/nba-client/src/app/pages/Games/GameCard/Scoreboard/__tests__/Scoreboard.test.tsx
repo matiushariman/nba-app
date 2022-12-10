@@ -26,14 +26,7 @@ describe('pages/Games/GameCard/Scoreboard', () => {
   };
 
   it('should call navigate on game details button click', async () => {
-    render(
-      <Scoreboard
-        homeTeam={homeTeam}
-        awayTeam={awayTeam}
-        gameStatusText="FINAL"
-        gameId="123"
-      />
-    );
+    render(<Scoreboard homeTeam={homeTeam} awayTeam={awayTeam} gameId="123" />);
 
     const gameDetailsBtn = screen.getByRole('button', {
       name: /game details/i,

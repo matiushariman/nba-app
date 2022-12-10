@@ -7,7 +7,7 @@ exports[`pages/games/GameCard/Scoreboard/GameCard/Score should render Score that
       class="w-[52px]"
     >
       <p
-        class="font-bold text-2xl"
+        class="font-bold text-3xl text-center"
       >
         100
       </p>

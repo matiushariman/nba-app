@@ -19,6 +19,7 @@ const Games = () => {
               gameId={game.gameId}
               gameStatusText={game.gameStatusText}
               gameLeaders={game.gameLeaders}
+              gameStatus={game.gameStatus}
             />
           ))}
         </div>

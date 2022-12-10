@@ -2,16 +2,11 @@ import { useNavigate } from 'react-router-dom';
 
 import TeamDetails from './TeamDetails';
 import Score from './Score';
-import GameStatusText from '../../../../components/GameStatusText';
+import GameStatusText from '../../../../components/GameStatusTextWithContext';
 
 import type { ScoreboardProps } from './Scoreboard.types';
 
-const Scoreboard = ({
-  awayTeam,
-  homeTeam,
-  gameStatusText,
-  gameId,
-}: ScoreboardProps) => {
+const Scoreboard = ({ awayTeam, homeTeam, gameId }: ScoreboardProps) => {
   const navigate = useNavigate();
 
   const navigateToGameDetails = () => navigate(`game-details/${gameId}`);
@@ -29,7 +24,7 @@ const Scoreboard = ({
           <Score score={awayTeam.score} />
         </div>
         <div className="flex-grow flex justify-center">
-          <GameStatusText gameStatusText={gameStatusText} />
+          <GameStatusText />
         </div>
         <div className="flex gap-3 items-center">
           <Score score={homeTeam.score} />

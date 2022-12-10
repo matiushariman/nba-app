@@ -23,10 +23,10 @@ exports[`pages/Games/GameCard should render GameCard that matches snapshot 1`] =
               >
                 <img
                   alt="Lakers logo"
-                  height="64"
+                  height="52"
                   loading="lazy"
                   src="https://cdn.nba.com/logos/nba/1/global/L/logo.svg"
-                  width="64"
+                  width="52"
                 />
                 <div>
                   <p
@@ -35,7 +35,7 @@ exports[`pages/Games/GameCard should render GameCard that matches snapshot 1`] =
                     Lakers
                   </p>
                   <p
-                    class="text-center text-gray-500 text-xs"
+                    class="text-center text-gray-500 text-sm"
                   >
                     0 - 82
                   </p>
@@ -45,7 +45,7 @@ exports[`pages/Games/GameCard should render GameCard that matches snapshot 1`] =
                 class="w-[52px]"
               >
                 <p
-                  class="font-bold text-2xl"
+                  class="font-bold text-3xl text-center"
                 >
                   92
                 </p>
@@ -55,7 +55,7 @@ exports[`pages/Games/GameCard should render GameCard that matches snapshot 1`] =
               class="flex-grow flex justify-center"
             >
               <p
-                class="text-sm uppercase font-bold"
+                class="text-xs uppercase font-bold"
               >
                 FINAL
               </p>
@@ -67,7 +67,7 @@ exports[`pages/Games/GameCard should render GameCard that matches snapshot 1`] =
                 class="w-[52px]"
               >
                 <p
-                  class="font-bold text-2xl"
+                  class="font-bold text-3xl text-center"
                 >
                   131
                 </p>
@@ -77,10 +77,10 @@ exports[`pages/Games/GameCard should render GameCard that matches snapshot 1`] =
               >
                 <img
                   alt="Celtics logo"
-                  height="64"
+                  height="52"
                   loading="lazy"
                   src="https://cdn.nba.com/logos/nba/0/global/L/logo.svg"
-                  width="64"
+                  width="52"
                 />
                 <div>
                   <p
@@ -89,7 +89,7 @@ exports[`pages/Games/GameCard should render GameCard that matches snapshot 1`] =
                     Celtics
                   </p>
                   <p
-                    class="text-center text-gray-500 text-xs"
+                    class="text-center text-gray-500 text-sm"
                   >
                     82 - 0
                   </p>
