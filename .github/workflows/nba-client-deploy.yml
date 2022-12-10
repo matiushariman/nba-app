@@ -46,6 +46,9 @@ jobs:
         with:
           path: '**/node_modules'
           key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
+      - name: Setup playwright
+        run: |
+          npx playwright install
       - run: yarn test:client-e2e
         env:
           E2E_BASE_URL: ${{ secrets.E2E_BASE_URL }}
