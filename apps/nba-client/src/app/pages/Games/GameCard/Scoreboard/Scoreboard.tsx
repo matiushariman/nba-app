@@ -39,7 +39,7 @@ const Scoreboard = ({ awayTeam, homeTeam, gameId }: ScoreboardProps) => {
       <div
         onClick={navigateToGameDetails}
         role="button"
-        className="hidden text-center flex items-center justify-center pt-2 pb-2 pl-4 pr-4 uppercase text-sm font-bold text-gray-800 bg-gray-50"
+        className="text-center flex items-center justify-center pt-2 pb-2 pl-4 pr-4 uppercase text-sm font-bold text-gray-800 bg-gray-50"
       >
         Game Details
       </div>
