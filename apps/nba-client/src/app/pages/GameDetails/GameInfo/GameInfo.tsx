@@ -1,12 +1,16 @@
 import TeamLogo from '../../../components/TeamLogo';
 import { selectGame } from '../../../hooks/useGetGame';
+import { selectArena, selectGameTime } from '../../../hooks/useGetBoxscore';
+import { convertDateToEt } from '../../../utils/dateUtils';
 
 import './GameInfo.styles.css';
 
 const GameInfo = () => {
   const game = selectGame();
+  const arena = selectArena();
+  const gameTime = selectGameTime();
 
-  if (!game) {
+  if (!game || !arena || !gameTime) {
     return null;
   }
 
@@ -32,8 +36,12 @@ const GameInfo = () => {
           className="hero-layer"
           alt="arena"
         />
-        <div className=" relative z-20">
-          <p className="text-white font-bold text-4xl uppercase">{`${awayTeam.teamName} @ ${homeTeam.teamName}`}</p>
+        <div className=" relative z-20 grid gap-2">
+          <p className="text-white text-sm">
+            {convertDateToEt({ date: gameTime })}
+          </p>
+          <p className="text-white font-bold text-5xl uppercase">{`${awayTeam.teamName} @ ${homeTeam.teamName}`}</p>
+          <p className="text-white">{`${arena?.arenaName}, ${arena?.arenaCity}, ${arena?.arenaState}`}</p>
         </div>
       </div>
       <div className="flex-grow opacity-20 min-w-[240px] relative grayscale hidden md:block">
