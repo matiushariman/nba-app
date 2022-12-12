@@ -50,6 +50,7 @@ exports[`pages/Games/GameCard should render GameCard that matches snapshot 1`] =
               >
                 <p
                   class="font-bold text-3xl text-center"
+                  data-testid="score"
                 >
                   92
                 </p>
@@ -72,6 +73,7 @@ exports[`pages/Games/GameCard should render GameCard that matches snapshot 1`] =
               >
                 <p
                   class="font-bold text-3xl text-center"
+                  data-testid="score"
                 >
                   131
                 </p>

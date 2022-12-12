@@ -9,7 +9,7 @@ const Score = ({ score }: ScoreProps) => {
 
   return (
     <div className="w-[52px]">
-      <p className="font-bold text-3xl text-center">
+      <p className="font-bold text-3xl text-center" data-testid="score">
         {hasGameStarted && !isScoreHidden ? score : '-'}
       </p>
     </div>

@@ -18,6 +18,7 @@ const Games = () => {
             <ScoreToggle />
           </div>
           <div
+            data-testid="todays-games"
             aria-label="today's games"
             className="grid md:grid-cols-2 md:gap-4 divide-y md:divide-y-0"
           >

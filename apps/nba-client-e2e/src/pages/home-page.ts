@@ -5,13 +5,15 @@ export class HomePage {
   readonly listOfTodaysGames: Locator;
   readonly scoreToggle: Locator;
   readonly score: Locator;
+  readonly gameDetailsBtn: Locator;
 
   constructor(page: Page) {
     this.page = page;
-    this.listOfTodaysGames = page.locator(`[aria-label="today's games"]`);
-    this.scoreToggle = page.locator(
-      'button[role="switch"]:has-text("Hide Score")'
-    );
-    this.score = page.locator('text=Suns16 - 11- >> p').nth(2);
+    this.listOfTodaysGames = page.getByTestId('todays-games');
+    this.scoreToggle = page.getByRole('switch', { name: /Hide Score/i });
+    this.score = page.getByTestId('score').first();
+    this.gameDetailsBtn = page
+      .getByRole('button', { name: /game details/i })
+      .first();
   }
 }
