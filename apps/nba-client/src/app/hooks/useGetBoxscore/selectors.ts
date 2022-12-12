@@ -39,3 +39,25 @@ export const selectLinescores = () => {
     },
   ];
 };
+
+export const selectInjuredPlayers = () => {
+  const boxScore = selectBoxscore();
+  const awayTeamInjuredPlayers =
+    boxScore?.game.awayTeam.players
+      .filter((player) => player.status === 'INACTIVE')
+      .map((player) => ({
+        ...player,
+        teamId: boxScore?.game.awayTeam.teamId,
+        teamTricode: boxScore?.game.awayTeam.teamTricode,
+      })) ?? [];
+  const homeTeamInjuredPlayers =
+    boxScore?.game.homeTeam.players
+      .filter((player) => player.status === 'INACTIVE')
+      .map((player) => ({
+        ...player,
+        teamId: boxScore?.game.homeTeam.teamId,
+        teamTricode: boxScore?.game.homeTeam.teamTricode,
+      })) ?? [];
+
+  return [...awayTeamInjuredPlayers, ...homeTeamInjuredPlayers];
+};

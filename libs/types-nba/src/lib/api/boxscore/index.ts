@@ -63,7 +63,7 @@ interface BoxscorePlayerStatistics {
   twoPointersPercentage: number;
 }
 
-interface BoxscorePlayer {
+export interface BoxscorePlayer {
   status: BoxscorePlayerStatus;
   order: number;
   personId: number;

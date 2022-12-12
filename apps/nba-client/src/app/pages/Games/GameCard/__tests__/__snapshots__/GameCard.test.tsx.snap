@@ -161,14 +161,18 @@ exports[`pages/Games/GameCard should render GameCard that matches snapshot 1`] =
                       class="flex items-center pt-1 pb-1"
                     >
                       <div
-                        class="mr-2 w-[24px] h-[24px]"
+                        class="mr-2"
                       >
-                        <img
-                          alt="Jalen Smith headshot"
-                          class="mr-2 bg-gray-300 shadow-sm rounded-full w-full h-full object-cover"
-                          loading="lazy"
-                          src="https://cdn.nba.com/headshots/nba/latest/260x190/1630188.png"
-                        />
+                        <div
+                          class="w-[24px] h-[24px]"
+                        >
+                          <img
+                            alt="Jalen Smith headshot"
+                            class="mr-2 bg-gray-300 shadow-sm rounded-full w-full h-full object-cover"
+                            loading="lazy"
+                            src="https://cdn.nba.com/headshots/nba/latest/260x190/1630188.png"
+                          />
+                        </div>
                       </div>
                       <div
                         class="grid"
@@ -178,22 +182,14 @@ exports[`pages/Games/GameCard should render GameCard that matches snapshot 1`] =
                         >
                           Jalen Smith
                         </p>
-                        <div
-                          class="grid grid-cols-3 divide-x gap-2"
-                        >
+                        <div>
                           <p
-                            class="text-xs"
+                            class="text-xs text-gray-500"
                           >
                             IND
-                          </p>
-                          <p
-                            class="text-xs"
-                          >
-                            #25
-                          </p>
-                          <p
-                            class="text-xs"
-                          >
+                             | #
+                            25
+                             | 
                             FC
                           </p>
                         </div>
@@ -222,14 +218,18 @@ exports[`pages/Games/GameCard should render GameCard that matches snapshot 1`] =
                       class="flex items-center pt-1 pb-1"
                     >
                       <div
-                        class="mr-2 w-[24px] h-[24px]"
+                        class="mr-2"
                       >
-                        <img
-                          alt="Klay Thompson headshot"
-                          class="mr-2 bg-gray-300 shadow-sm rounded-full w-full h-full object-cover"
-                          loading="lazy"
-                          src="https://cdn.nba.com/headshots/nba/latest/260x190/202691.png"
-                        />
+                        <div
+                          class="w-[24px] h-[24px]"
+                        >
+                          <img
+                            alt="Klay Thompson headshot"
+                            class="mr-2 bg-gray-300 shadow-sm rounded-full w-full h-full object-cover"
+                            loading="lazy"
+                            src="https://cdn.nba.com/headshots/nba/latest/260x190/202691.png"
+                          />
+                        </div>
                       </div>
                       <div
                         class="grid"
@@ -239,22 +239,14 @@ exports[`pages/Games/GameCard should render GameCard that matches snapshot 1`] =
                         >
                           Klay Thompson
                         </p>
-                        <div
-                          class="grid grid-cols-3 divide-x gap-2"
-                        >
+                        <div>
                           <p
-                            class="text-xs"
+                            class="text-xs text-gray-500"
                           >
                             GSW
-                          </p>
-                          <p
-                            class="text-xs"
-                          >
-                            #11
-                          </p>
-                          <p
-                            class="text-xs"
-                          >
+                             | #
+                            11
+                             | 
                             G
                           </p>
                         </div>
