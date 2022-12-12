@@ -40,6 +40,10 @@ export const selectLinescores = () => {
   ];
 };
 
+export const selectAwayTeam = () => selectBoxscore()?.game.awayTeam;
+
+export const selectHomeTeam = () => selectBoxscore()?.game.homeTeam;
+
 export const selectInjuredPlayers = () => {
   const boxScore = selectBoxscore();
   const awayTeamInjuredPlayers =

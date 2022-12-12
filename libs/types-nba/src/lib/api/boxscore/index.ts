@@ -145,7 +145,7 @@ interface BoxscoreTeamStatistics {
   twoPointersPercentage: number;
 }
 
-interface BoxscoreTeam {
+export interface BoxscoreTeam {
   teamId: number;
   teamName: string;
   teamCity: string;
