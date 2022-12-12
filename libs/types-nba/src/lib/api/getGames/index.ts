@@ -1,15 +1,4 @@
-interface Meta {
-  version: number;
-  request: string;
-  time: string;
-  code: number;
-}
-
-interface Period {
-  period: number;
-  periodType: string;
-  score: number;
-}
+import type { Meta, GameStatus, Period } from '../common';
 
 export interface Team {
   teamId: number;
@@ -48,18 +37,10 @@ interface PbOdds {
   suspended: number;
 }
 
-export const GameStatusEnum = {
-  pregame: 1,
-  livegame: 2,
-  endgame: 3,
-} as const;
-
-type ReverseMap<T> = T[keyof T];
-
 export interface Game {
   gameId: string;
   gameCode: string;
-  gameStatus: ReverseMap<typeof GameStatusEnum>;
+  gameStatus: GameStatus;
   gameStatusText: string;
   period: number;
   gameClock: string;

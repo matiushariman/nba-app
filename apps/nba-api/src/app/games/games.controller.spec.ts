@@ -128,7 +128,7 @@ describe('GamesController', () => {
       expect(
         await games
           .get<GamesController>(GamesController)
-          .getGameById('0022200360')
+          .getGameById({ gameId: '0022200360' })
       ).toEqual(result);
     });
   });

@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pages/GameDetails/GameInfo should render GameInfo that matches snapshot 1`] = `
+<body>
+  <div>
+    <div
+      class="bg-black flex"
+    >
+      <div
+        class="flex-grow opacity-20 min-w-[240px] relative grayscale hidden md:block"
+      >
+        <div
+          class="absolute right-[-50%]"
+        >
+          <img
+            alt="Lakers logo"
+            height="360"
+            loading="lazy"
+            src="https://cdn.nba.com/logos/nba/1/global/D/logo.svg"
+            width="360"
+          />
+        </div>
+      </div>
+      <div
+        class="relative h-[360px] bg-black p-10 container mx-auto max-w-[920px] z-10"
+      >
+        <div
+          class="hero-layer hero-overlay"
+        />
+        <img
+          alt="arena"
+          class="hero-layer"
+          src="https://cdn.nba.com/next/arenas/arena.jpg"
+        />
+        <div
+          class=" relative z-20 grid gap-2"
+        >
+          <p
+            class="text-white text-sm"
+          >
+            December 10, 2022 5:00 PM
+          </p>
+          <p
+            class="text-white font-bold text-5xl uppercase"
+          >
+            Lakers @ Celtics
+          </p>
+          <p
+            class="text-white"
+          >
+            TD Garden, Boston, MA
+          </p>
+        </div>
+      </div>
+      <div
+        class="flex-grow opacity-20 min-w-[240px] relative grayscale hidden md:block"
+      >
+        <div
+          class="absolute left-[-50%]"
+        >
+          <img
+            alt="Celtics logo"
+            height="480"
+            loading="lazy"
+            src="https://cdn.nba.com/logos/nba/2/global/D/logo.svg"
+            width="480"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;

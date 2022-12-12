@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pages/GameDetails/Summary/TeamComparison/TeamStats/TeamStatsChart should render TeamStatsChart that matches snapshot 1`] = `
+<body>
+  <div>
+    <div>
+      <div
+        class="flex items-center gap-2"
+      >
+        <div
+          class="flex-grow"
+        >
+          <p
+            class="text-sm"
+          >
+            BOS
+          </p>
+        </div>
+        <div>
+          <p
+            class="text-gray-500 text-sm"
+          >
+            100%
+          </p>
+        </div>
+        <div>
+          <p
+            class="font-bold text-lg"
+          >
+            100/100
+          </p>
+        </div>
+      </div>
+      <div
+        class="relative h-4"
+      >
+        <div
+          class="absolute h-4 bg-red-800 z-10"
+          style="width: 0%;"
+        />
+        <div
+          class="absolute h-4 bg-gray-100 w-full"
+        />
+      </div>
+    </div>
+  </div>
+</body>
+`;

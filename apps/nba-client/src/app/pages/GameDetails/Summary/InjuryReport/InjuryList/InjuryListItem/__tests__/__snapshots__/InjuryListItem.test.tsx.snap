@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pages/GameDetails/Summary/InjuryReport/InjuryList/InjuryListItem should render InjuryListItem that matches snapshot 1`] = `
+<body>
+  <div>
+    <div
+      class="pt-2 pb-2 flex items-center gap-2"
+    >
+      <div>
+        <div
+          class="w-[48px] h-[48px]"
+        >
+          <img
+            alt="Jayson Tatum headshot"
+            class="mr-2 bg-gray-300 shadow-sm rounded-full w-full h-full object-cover"
+            loading="lazy"
+            src="https://cdn.nba.com/headshots/nba/latest/260x190/1.png"
+          />
+        </div>
+      </div>
+      <div>
+        <img
+          alt="BOS logo"
+          height="24"
+          loading="lazy"
+          src="https://cdn.nba.com/logos/nba/1/global/L/logo.svg"
+          width="24"
+        />
+      </div>
+      <div
+        class="grid"
+      >
+        <p
+          class="text-sm"
+        >
+          Jayson Tatum
+        </p>
+        <p
+          class="text-xs text-gray-500"
+        >
+          BOS
+           | #
+          0
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+`;

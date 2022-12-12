@@ -12,6 +12,6 @@ export class HomePage {
     this.scoreToggle = page.locator(
       'button[role="switch"]:has-text("Hide Score")'
     );
-    this.score = page.locator('text=Pacers13 - 11- >> p').nth(2);
+    this.score = page.locator('text=Suns16 - 11- >> p').nth(2);
   }
 }

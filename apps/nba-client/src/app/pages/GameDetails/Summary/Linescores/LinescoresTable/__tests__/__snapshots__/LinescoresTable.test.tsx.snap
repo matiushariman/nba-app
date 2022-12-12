@@ -1,0 +1,128 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pages/GameDetails/Summary/Linescores/LinescoresTable should render LinescoresTable that matches snapshot 1`] = `
+<body>
+  <div>
+    <table
+      class="table-auto w-full"
+    >
+      <thead
+        class="bg-gray-300"
+      >
+        <tr>
+          <th
+            align="left"
+            class="uppercase text-xs pt-1 pb-1 pl-4"
+          >
+            Team
+          </th>
+          <th
+            class="uppercase text-xs"
+          >
+            Q1
+          </th>
+          <th
+            class="uppercase text-xs"
+          >
+            Q2
+          </th>
+          <th
+            class="uppercase text-xs"
+          >
+            Q3
+          </th>
+          <th
+            class="uppercase text-xs"
+          >
+            Q4
+          </th>
+          <th
+            align="right"
+            class="uppercase text-xs pr-4"
+          >
+            Final
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        class="divide-y"
+      >
+        <tr>
+          <td
+            class="font-bold text-sm pt-1 pb-1 pl-4"
+          >
+            LAL
+          </td>
+          <td
+            align="center"
+            class="text-sm"
+          >
+            20
+          </td>
+          <td
+            align="center"
+            class="text-sm"
+          >
+            15
+          </td>
+          <td
+            align="center"
+            class="text-sm"
+          >
+            25
+          </td>
+          <td
+            align="center"
+            class="text-sm"
+          >
+            32
+          </td>
+          <td
+            align="right"
+            class="pr-4 text-sm"
+          >
+            92
+          </td>
+        </tr>
+        <tr>
+          <td
+            class="font-bold text-sm pt-1 pb-1 pl-4"
+          >
+            BOS
+          </td>
+          <td
+            align="center"
+            class="text-sm"
+          >
+            24
+          </td>
+          <td
+            align="center"
+            class="text-sm"
+          >
+            34
+          </td>
+          <td
+            align="center"
+            class="text-sm"
+          >
+            31
+          </td>
+          <td
+            align="center"
+            class="text-sm"
+          >
+            42
+          </td>
+          <td
+            align="right"
+            class="pr-4 text-sm"
+          >
+            131
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+`;
