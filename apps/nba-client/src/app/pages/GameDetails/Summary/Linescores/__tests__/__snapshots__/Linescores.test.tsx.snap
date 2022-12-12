@@ -4,138 +4,325 @@ exports[`pages/GameDetails/Summary/Linescores should render Linescores that matc
 <body>
   <div>
     <div
-      class="p-5 grid gap-3 divide-y shadow-md bg-white rounded"
+      class="p-5 grid md:grid-flow-col gap-6 md:divide-x divide-y md:divide-y-0 shadow-md bg-white rounded"
     >
-      <div>
-        <p
-          class="text-2xl font-bold uppercase"
+      <div
+        class="md:col-span-3"
+      >
+        <div
+          class="grid gap-3 divide-y"
         >
-          Linescores
-        </p>
+          <div>
+            <p
+              class="text-2xl font-bold uppercase"
+            >
+              Linescores
+            </p>
+          </div>
+          <div
+            class="pt-5"
+          >
+            <table
+              class="table-auto w-full"
+            >
+              <thead
+                class="bg-gray-300"
+              >
+                <tr>
+                  <th
+                    align="left"
+                    class="uppercase text-xs pt-1 pb-1 pl-4"
+                  >
+                    Team
+                  </th>
+                  <th
+                    class="uppercase text-xs"
+                  >
+                    Q1
+                  </th>
+                  <th
+                    class="uppercase text-xs"
+                  >
+                    Q2
+                  </th>
+                  <th
+                    class="uppercase text-xs"
+                  >
+                    Q3
+                  </th>
+                  <th
+                    class="uppercase text-xs"
+                  >
+                    Q4
+                  </th>
+                  <th
+                    align="right"
+                    class="uppercase text-xs pr-4"
+                  >
+                    Final
+                  </th>
+                </tr>
+              </thead>
+              <tbody
+                class="divide-y"
+              >
+                <tr>
+                  <td
+                    class="font-bold text-sm pt-1 pb-1 pl-4"
+                  >
+                    LAL
+                  </td>
+                  <td
+                    align="center"
+                    class="text-sm"
+                  >
+                    20
+                  </td>
+                  <td
+                    align="center"
+                    class="text-sm"
+                  >
+                    15
+                  </td>
+                  <td
+                    align="center"
+                    class="text-sm"
+                  >
+                    25
+                  </td>
+                  <td
+                    align="center"
+                    class="text-sm"
+                  >
+                    32
+                  </td>
+                  <td
+                    align="right"
+                    class="pr-4 text-sm"
+                  >
+                    92
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    class="font-bold text-sm pt-1 pb-1 pl-4"
+                  >
+                    BOS
+                  </td>
+                  <td
+                    align="center"
+                    class="text-sm"
+                  >
+                    24
+                  </td>
+                  <td
+                    align="center"
+                    class="text-sm"
+                  >
+                    34
+                  </td>
+                  <td
+                    align="center"
+                    class="text-sm"
+                  >
+                    31
+                  </td>
+                  <td
+                    align="center"
+                    class="text-sm"
+                  >
+                    42
+                  </td>
+                  <td
+                    align="right"
+                    class="pr-4 text-sm"
+                  >
+                    131
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
       <div
-        class="pt-5"
+        class="md:col-span-4"
       >
-        <table
-          class="table-auto w-full"
+        <div
+          class="grid gap-3 divide-y pt-6 md:pl-6 md:pt-0"
         >
-          <thead
-            class="bg-gray-300"
+          <div>
+            <p
+              class="text-2xl font-bold uppercase"
+            >
+              Top Performers
+            </p>
+          </div>
+          <div
+            class="pt-5"
           >
-            <tr>
-              <th
-                align="left"
-                class="uppercase text-xs pt-1 pb-1 pl-4"
+            <div
+              class="grid gap-4 md:grid-cols-2"
+            >
+              <div
+                class="flex items-center"
               >
-                Team
-              </th>
-              <th
-                class="uppercase text-xs"
+                <div
+                  class="flex flex-col items-center gap-1 w-[115px]"
+                >
+                  <div>
+                    <div
+                      class="w-[48px] h-[48px]"
+                    >
+                      <img
+                        alt="name headshot"
+                        class="mr-2 bg-gray-300 shadow-sm rounded-full w-full h-full object-cover"
+                        loading="lazy"
+                        src="https://cdn.nba.com/headshots/nba/latest/260x190/1629028.png"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <p
+                      class="text-sm text-center"
+                    >
+                      Deandre Ayton
+                    </p>
+                    <p
+                      class="text-xs text-gray-500 text-center"
+                    >
+                      PHX | #22 | C
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="grid grid-cols-3 flex-grow"
+                >
+                  <div>
+                    <div>
+                      <p
+                        class="text-center font-bold text-xl"
+                      >
+                        28
+                      </p>
+                      <p
+                        class="text-center text-sm uppercase"
+                      >
+                        Pts
+                      </p>
+                    </div>
+                  </div>
+                  <div>
+                    <div>
+                      <p
+                        class="text-center font-bold text-xl"
+                      >
+                        12
+                      </p>
+                      <p
+                        class="text-center text-sm uppercase"
+                      >
+                        Reb
+                      </p>
+                    </div>
+                  </div>
+                  <div>
+                    <div>
+                      <p
+                        class="text-center font-bold text-xl"
+                      >
+                        5
+                      </p>
+                      <p
+                        class="text-center text-sm uppercase"
+                      >
+                        Ast
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex items-center"
               >
-                Q1
-              </th>
-              <th
-                class="uppercase text-xs"
-              >
-                Q2
-              </th>
-              <th
-                class="uppercase text-xs"
-              >
-                Q3
-              </th>
-              <th
-                class="uppercase text-xs"
-              >
-                Q4
-              </th>
-              <th
-                align="right"
-                class="uppercase text-xs pr-4"
-              >
-                Final
-              </th>
-            </tr>
-          </thead>
-          <tbody
-            class="divide-y"
-          >
-            <tr>
-              <td
-                class="font-bold text-sm pt-1 pb-1 pl-4"
-              >
-                LAL
-              </td>
-              <td
-                align="center"
-                class="text-sm"
-              >
-                20
-              </td>
-              <td
-                align="center"
-                class="text-sm"
-              >
-                15
-              </td>
-              <td
-                align="center"
-                class="text-sm"
-              >
-                25
-              </td>
-              <td
-                align="center"
-                class="text-sm"
-              >
-                32
-              </td>
-              <td
-                align="right"
-                class="pr-4 text-sm"
-              >
-                92
-              </td>
-            </tr>
-            <tr>
-              <td
-                class="font-bold text-sm pt-1 pb-1 pl-4"
-              >
-                BOS
-              </td>
-              <td
-                align="center"
-                class="text-sm"
-              >
-                24
-              </td>
-              <td
-                align="center"
-                class="text-sm"
-              >
-                34
-              </td>
-              <td
-                align="center"
-                class="text-sm"
-              >
-                31
-              </td>
-              <td
-                align="center"
-                class="text-sm"
-              >
-                42
-              </td>
-              <td
-                align="right"
-                class="pr-4 text-sm"
-              >
-                131
-              </td>
-            </tr>
-          </tbody>
-        </table>
+                <div
+                  class="flex flex-col items-center gap-1 w-[115px]"
+                >
+                  <div>
+                    <div
+                      class="w-[48px] h-[48px]"
+                    >
+                      <img
+                        alt="name headshot"
+                        class="mr-2 bg-gray-300 shadow-sm rounded-full w-full h-full object-cover"
+                        loading="lazy"
+                        src="https://cdn.nba.com/headshots/nba/latest/260x190/1629627.png"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <p
+                      class="text-sm text-center"
+                    >
+                      Zion Williamson
+                    </p>
+                    <p
+                      class="text-xs text-gray-500 text-center"
+                    >
+                      NOP | #1 | F
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="grid grid-cols-3 flex-grow"
+                >
+                  <div>
+                    <div>
+                      <p
+                        class="text-center font-bold text-xl"
+                      >
+                        35
+                      </p>
+                      <p
+                        class="text-center text-sm uppercase"
+                      >
+                        Pts
+                      </p>
+                    </div>
+                  </div>
+                  <div>
+                    <div>
+                      <p
+                        class="text-center font-bold text-xl"
+                      >
+                        8
+                      </p>
+                      <p
+                        class="text-center text-sm uppercase"
+                      >
+                        Reb
+                      </p>
+                    </div>
+                  </div>
+                  <div>
+                    <div>
+                      <p
+                        class="text-center font-bold text-xl"
+                      >
+                        3
+                      </p>
+                      <p
+                        class="text-center text-sm uppercase"
+                      >
+                        Ast
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

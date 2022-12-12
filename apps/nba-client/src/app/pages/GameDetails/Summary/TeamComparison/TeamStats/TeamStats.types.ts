@@ -4,7 +4,7 @@ type TeamStats = {
   readonly teamTricode: Team['teamTricode'];
   readonly percentage: number;
   readonly secondaryText?: string;
-  readonly primaryText: string;
+  readonly primaryText: string | number;
 };
 
 export interface TeamStatsProps {

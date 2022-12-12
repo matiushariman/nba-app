@@ -1,7 +1,7 @@
 import { rest } from 'msw';
 import { GetBoxscoreByGameIdRes } from '@nba-app/types-nba';
 
-export const mockBoxcore = [
+export const mockBoxcore: GetBoxscoreByGameIdRes[] = [
   {
     meta: {
       version: 1,

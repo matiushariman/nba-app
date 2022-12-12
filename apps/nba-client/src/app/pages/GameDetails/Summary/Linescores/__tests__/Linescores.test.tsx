@@ -68,6 +68,33 @@ jest.mock('../../../../../hooks/useGetBoxscore', () => ({
   ]),
 }));
 
+jest.mock('../../../../../hooks/useGetGame', () => ({
+  selectGameLeaders: jest.fn().mockReturnValueOnce({
+    homeLeaders: {
+      personId: 1629627,
+      name: 'Zion Williamson',
+      jerseyNum: '1',
+      position: 'F',
+      teamTricode: 'NOP',
+      playerSlug: null,
+      points: 35,
+      rebounds: 8,
+      assists: 3,
+    },
+    awayLeaders: {
+      personId: 1629028,
+      name: 'Deandre Ayton',
+      jerseyNum: '22',
+      position: 'C',
+      teamTricode: 'PHX',
+      playerSlug: null,
+      points: 28,
+      rebounds: 12,
+      assists: 5,
+    },
+  }),
+}));
+
 describe('pages/GameDetails/Summary/Linescores', () => {
   it('should render Linescores that matches snapshot', () => {
     const { baseElement } = render(<Linescores />);

@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pages/GameDetails/Summary/Linescores/TopPerformers/TopPerformer should render TopPerformer that matches snapshot 1`] = `
+<body>
+  <div>
+    <div
+      class="flex items-center"
+    >
+      <div
+        class="flex flex-col items-center gap-1 w-[115px]"
+      >
+        <div>
+          <div
+            class="w-[48px] h-[48px]"
+          >
+            <img
+              alt="name headshot"
+              class="mr-2 bg-gray-300 shadow-sm rounded-full w-full h-full object-cover"
+              loading="lazy"
+              src="https://cdn.nba.com/headshots/nba/latest/260x190/1629028.png"
+            />
+          </div>
+        </div>
+        <div>
+          <p
+            class="text-sm text-center"
+          >
+            Deandre Ayton
+          </p>
+          <p
+            class="text-xs text-gray-500 text-center"
+          >
+            PHX | #22 | C
+          </p>
+        </div>
+      </div>
+      <div
+        class="grid grid-cols-3 flex-grow"
+      >
+        <div>
+          <div>
+            <p
+              class="text-center font-bold text-xl"
+            >
+              28
+            </p>
+            <p
+              class="text-center text-sm uppercase"
+            >
+              Pts
+            </p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <p
+              class="text-center font-bold text-xl"
+            >
+              12
+            </p>
+            <p
+              class="text-center text-sm uppercase"
+            >
+              Reb
+            </p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <p
+              class="text-center font-bold text-xl"
+            >
+              5
+            </p>
+            <p
+              class="text-center text-sm uppercase"
+            >
+              Ast
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;
