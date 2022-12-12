@@ -6,12 +6,16 @@ exports[`components/Header should render Header that matches snapshot 1`] = `
     <div
       class="dark:bg-[#000] text-white pl-8 pr-8 pt-3 pb-3 flex justify-between items-center"
     >
-      <img
-        alt="NBA Logo"
-        height="28"
-        src="https://cdn.nba.com/logos/leagues/logo-nba.svg"
-        width="48"
-      />
+      <a
+        href="/"
+      >
+        <img
+          alt="NBA Logo"
+          height="28"
+          src="https://cdn.nba.com/logos/leagues/logo-nba.svg"
+          width="48"
+        />
+      </a>
       <a
         class="text-sm"
         href="https://github.com/matiushariman/nba-app"
