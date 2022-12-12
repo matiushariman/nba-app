@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/ui/Card should render Card that matches snapshot 1`] = `
+<body>
+  <div>
+    <div
+      class="undefined shadow-md bg-white rounded"
+    >
+      Hello
+    </div>
+  </div>
+</body>
+`;

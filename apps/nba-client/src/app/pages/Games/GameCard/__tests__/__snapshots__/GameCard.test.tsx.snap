@@ -106,7 +106,7 @@ exports[`pages/Games/GameCard should render GameCard that matches snapshot 1`] =
             </div>
           </div>
           <div
-            class="hidden text-center flex items-center justify-center pt-2 pb-2 pl-4 pr-4 uppercase text-sm font-bold text-gray-800 bg-gray-50"
+            class="text-center flex items-center justify-center pt-2 pb-2 pl-4 pr-4 uppercase text-sm font-bold text-gray-800 bg-gray-50"
             role="button"
           >
             Game Details
