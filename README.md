@@ -1,43 +1,41 @@
+# NBA App
+
 [![codecov](https://codecov.io/gh/matiushariman/nba-app/branch/main/graph/badge.svg?token=UC95QG595M)](https://codecov.io/gh/matiushariman/nba-app)
-
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#contact">Contact</a></li>
-  </ol>
-</details>
-
-
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-TBD
+NBA app is a web application for viewing live NBA data*.
 
+_* At the moment live data is available only in development mode._
+
+DEMO URL: https://nba.matiushariman.com/
+
+### Features
+- View today's NBA games
+- View game details, such as:
+  - Summary:
+    - Linescores
+    - Top performers
+    - Team comparison
+    - Injury list
 
 ### Built With
 
-[![Jest][jest-shield]][jest-url]
 [![Nx][nx-shield]][nx-url]
-[![NestJS][nest-shield]][nest-url]
-[![Playwright][playwright-shield]][playwright-url]
-[![ReactJS][react-shield]][react-url]
-[![RTL][rtl-shield]][rtl-url]
 [![Typescript][typescript-shield]][typescript-url]
+
+#### Frontend
+[![ReactJS][react-shield]][react-url]
 [![Tailwind][tailwind-shield]][tailwind-url]
+
+#### Backend
+[![NestJS][nest-shield]][nest-url]
+
+#### Testing
+[![Jest][jest-shield]][jest-url]
+[![Playwright][playwright-shield]][playwright-url]
+[![RTL][rtl-shield]][rtl-url]
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -85,12 +83,14 @@ To run e2e tests (client) *
 
 _* In order to run e2e tests locally, both client & server app has to run._
 
+## Dependency Graph
+
+<img src="./nba-deps-graph.png" width="804" alt="nba deps graph">
+
 <!-- CONTACT -->
 ## Contact
 
 [![LinkedIn][linkedin-shield]][linkedin-url]
-
-Project Link: [https://github.com/matiushariman/nba-app](https://github.com/matiushariman/nba-app)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 [jest-shield]: https://img.shields.io/badge/-jest-%23C21325?style=for-the-badge&logo=jest&logoColor=white
