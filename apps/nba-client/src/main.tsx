@@ -2,6 +2,7 @@ import { StrictMode } from 'react';
 import * as ReactDOM from 'react-dom/client';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import { ReactQueryDevtools } from 'react-query/devtools';
+import { BrowserRouter } from 'react-router-dom';
 
 import App from './app/app';
 import { shouldUseMock } from './app/utils/mockUtils';
@@ -23,7 +24,9 @@ if (shouldUseMock) {
 root.render(
   <StrictMode>
     <QueryClientProvider client={queryClient}>
-      <App />
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
       <ReactQueryDevtools />
     </QueryClientProvider>
   </StrictMode>
