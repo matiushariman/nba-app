@@ -3,14 +3,14 @@
 exports[`pages/GameDetails/Summary/TeamComparison/TeamComparison.utils getAssistsStats should return object that matches snapshot 1`] = `
 Object {
   "awayTeam": Object {
-    "percentage": 100,
-    "primaryText": 34,
-    "teamTricode": "PHX",
+    "percentage": 76.92307692307693,
+    "primaryText": 10,
+    "teamTricode": "OKC",
   },
   "homeTeam": Object {
-    "percentage": 91.17647058823529,
-    "primaryText": 31,
-    "teamTricode": "NOP",
+    "percentage": 100,
+    "primaryText": 13,
+    "teamTricode": "DAL",
   },
   "label": "Assists",
 }
@@ -19,14 +19,14 @@ Object {
 exports[`pages/GameDetails/Summary/TeamComparison/TeamComparison.utils getBlocksStats should return object that matches snapshot 1`] = `
 Object {
   "awayTeam": Object {
-    "percentage": 100,
-    "primaryText": 5,
-    "teamTricode": "PHX",
+    "percentage": 0,
+    "primaryText": 0,
+    "teamTricode": "OKC",
   },
   "homeTeam": Object {
-    "percentage": 60,
-    "primaryText": 3,
-    "teamTricode": "NOP",
+    "percentage": 100,
+    "primaryText": 1,
+    "teamTricode": "DAL",
   },
   "label": "Blocks",
 }
@@ -35,14 +35,14 @@ Object {
 exports[`pages/GameDetails/Summary/TeamComparison/TeamComparison.utils getDefReboundsStats should return object that matches snapshot 1`] = `
 Object {
   "awayTeam": Object {
-    "percentage": 63.888888888888886,
-    "primaryText": 23,
-    "teamTricode": "PHX",
+    "percentage": 84.21052631578947,
+    "primaryText": 16,
+    "teamTricode": "OKC",
   },
   "homeTeam": Object {
     "percentage": 100,
-    "primaryText": 36,
-    "teamTricode": "NOP",
+    "primaryText": 19,
+    "teamTricode": "DAL",
   },
   "label": "Defensive Rebounds",
 }
@@ -51,14 +51,14 @@ Object {
 exports[`pages/GameDetails/Summary/TeamComparison/TeamComparison.utils getFastBreakPtsStats should return object that matches snapshot 1`] = `
 Object {
   "awayTeam": Object {
-    "percentage": 62.5,
-    "primaryText": 5,
-    "teamTricode": "PHX",
+    "percentage": 100,
+    "primaryText": 3,
+    "teamTricode": "OKC",
   },
   "homeTeam": Object {
-    "percentage": 100,
-    "primaryText": 8,
-    "teamTricode": "NOP",
+    "percentage": 33.33333333333333,
+    "primaryText": 1,
+    "teamTricode": "DAL",
   },
   "label": "Fast Break Points",
 }
@@ -67,16 +67,16 @@ Object {
 exports[`pages/GameDetails/Summary/TeamComparison/TeamComparison.utils getFieldGoalStats should return object that matches snapshot 1`] = `
 Object {
   "awayTeam": Object {
-    "percentage": 46.6666666666667,
-    "primaryText": "49/105",
-    "secondaryText": "46.7%",
-    "teamTricode": "PHX",
+    "percentage": 44.1860465116279,
+    "primaryText": "19/43",
+    "secondaryText": "44.2%",
+    "teamTricode": "OKC",
   },
   "homeTeam": Object {
-    "percentage": 58.1395348837209,
-    "primaryText": "50/86",
-    "secondaryText": "58.1%",
-    "teamTricode": "NOP",
+    "percentage": 40,
+    "primaryText": "20/50",
+    "secondaryText": "40.0%",
+    "teamTricode": "DAL",
   },
   "label": "Field Goals",
 }
@@ -85,16 +85,16 @@ Object {
 exports[`pages/GameDetails/Summary/TeamComparison/TeamComparison.utils getFreeThrowStats should return object that matches snapshot 1`] = `
 Object {
   "awayTeam": Object {
-    "percentage": 76.4705882352941,
-    "primaryText": "13/17",
-    "secondaryText": "76.5%",
-    "teamTricode": "PHX",
+    "percentage": 100,
+    "primaryText": "7/7",
+    "secondaryText": "100.0%",
+    "teamTricode": "OKC",
   },
   "homeTeam": Object {
-    "percentage": 75,
-    "primaryText": "21/28",
-    "secondaryText": "75.0%",
-    "teamTricode": "NOP",
+    "percentage": 86.6666666666667,
+    "primaryText": "13/15",
+    "secondaryText": "86.7%",
+    "teamTricode": "DAL",
   },
   "label": "Free Throws",
 }
@@ -103,14 +103,14 @@ Object {
 exports[`pages/GameDetails/Summary/TeamComparison/TeamComparison.utils getOffReboundsStats should return object that matches snapshot 1`] = `
 Object {
   "awayTeam": Object {
-    "percentage": 100,
-    "primaryText": 19,
-    "teamTricode": "PHX",
+    "percentage": 50,
+    "primaryText": 5,
+    "teamTricode": "OKC",
   },
   "homeTeam": Object {
-    "percentage": 36.84210526315789,
-    "primaryText": 7,
-    "teamTricode": "NOP",
+    "percentage": 100,
+    "primaryText": 10,
+    "teamTricode": "DAL",
   },
   "label": "Offensive Rebounds",
 }
@@ -119,14 +119,14 @@ Object {
 exports[`pages/GameDetails/Summary/TeamComparison/TeamComparison.utils getPtsOffTurnoversStats should return object that matches snapshot 1`] = `
 Object {
   "awayTeam": Object {
-    "percentage": 92.5925925925926,
-    "primaryText": 25,
-    "teamTricode": "PHX",
+    "percentage": 50,
+    "primaryText": 4,
+    "teamTricode": "OKC",
   },
   "homeTeam": Object {
     "percentage": 100,
-    "primaryText": 27,
-    "teamTricode": "NOP",
+    "primaryText": 8,
+    "teamTricode": "DAL",
   },
   "label": "Points Off Turnovers",
 }
@@ -135,14 +135,14 @@ Object {
 exports[`pages/GameDetails/Summary/TeamComparison/TeamComparison.utils getReboundsStats should return object that matches snapshot 1`] = `
 Object {
   "awayTeam": Object {
-    "percentage": 97.67441860465115,
-    "primaryText": 42,
-    "teamTricode": "PHX",
+    "percentage": 72.41379310344827,
+    "primaryText": 21,
+    "teamTricode": "OKC",
   },
   "homeTeam": Object {
     "percentage": 100,
-    "primaryText": 43,
-    "teamTricode": "NOP",
+    "primaryText": 29,
+    "teamTricode": "DAL",
   },
   "label": "Total Rebounds",
 }
@@ -151,14 +151,14 @@ Object {
 exports[`pages/GameDetails/Summary/TeamComparison/TeamComparison.utils getStealsStats should return object that matches snapshot 1`] = `
 Object {
   "awayTeam": Object {
-    "percentage": 70,
-    "primaryText": 7,
-    "teamTricode": "PHX",
+    "percentage": 0,
+    "primaryText": 0,
+    "teamTricode": "OKC",
   },
   "homeTeam": Object {
     "percentage": 100,
-    "primaryText": 10,
-    "teamTricode": "NOP",
+    "primaryText": 2,
+    "teamTricode": "DAL",
   },
   "label": "Steals",
 }
@@ -167,16 +167,16 @@ Object {
 exports[`pages/GameDetails/Summary/TeamComparison/TeamComparison.utils getThreePtStats should return object that matches snapshot 1`] = `
 Object {
   "awayTeam": Object {
-    "percentage": 34.2105263157895,
-    "primaryText": "13/38",
-    "secondaryText": "34.2%",
-    "teamTricode": "PHX",
+    "percentage": 36.8421052631579,
+    "primaryText": "7/19",
+    "secondaryText": "36.8%",
+    "teamTricode": "OKC",
   },
   "homeTeam": Object {
-    "percentage": 32,
-    "primaryText": "8/25",
-    "secondaryText": "32.0%",
-    "teamTricode": "NOP",
+    "percentage": 41.9354838709677,
+    "primaryText": "13/31",
+    "secondaryText": "41.9%",
+    "teamTricode": "DAL",
   },
   "label": "3-Pointers",
 }

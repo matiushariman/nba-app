@@ -17,7 +17,7 @@ exports[`pages/GameDetails/Summary/Linescores/TopPerformers/TopPerformer should 
               alt="name headshot"
               class="mr-2 bg-gray-300 shadow-sm rounded-full w-full h-full object-cover"
               loading="lazy"
-              src="https://cdn.nba.com/headshots/nba/latest/260x190/1629028.png"
+              src="https://cdn.nba.com/headshots/nba/latest/260x190/1628983.png"
             />
           </div>
         </div>
@@ -25,12 +25,12 @@ exports[`pages/GameDetails/Summary/Linescores/TopPerformers/TopPerformer should 
           <p
             class="text-sm text-center"
           >
-            Deandre Ayton
+            Shai Gilgeous-Alexander
           </p>
           <p
             class="text-xs text-gray-500 text-center"
           >
-            PHX | #22 | C
+            OKC | #2 | GF
           </p>
         </div>
       </div>
@@ -42,7 +42,7 @@ exports[`pages/GameDetails/Summary/Linescores/TopPerformers/TopPerformer should 
             <p
               class="text-center font-bold text-xl"
             >
-              28
+              15
             </p>
             <p
               class="text-center text-sm uppercase"
@@ -56,7 +56,7 @@ exports[`pages/GameDetails/Summary/Linescores/TopPerformers/TopPerformer should 
             <p
               class="text-center font-bold text-xl"
             >
-              12
+              1
             </p>
             <p
               class="text-center text-sm uppercase"
@@ -70,7 +70,7 @@ exports[`pages/GameDetails/Summary/Linescores/TopPerformers/TopPerformer should 
             <p
               class="text-center font-bold text-xl"
             >
-              5
+              2
             </p>
             <p
               class="text-center text-sm uppercase"

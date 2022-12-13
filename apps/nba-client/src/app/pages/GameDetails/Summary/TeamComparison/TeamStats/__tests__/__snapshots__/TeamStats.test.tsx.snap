@@ -27,7 +27,7 @@ exports[`pages/GameDetails/Summary/TeamComparison/TeamStats should render TeamSt
                 <p
                   class="text-sm"
                 >
-                  PHX
+                  OKC
                 </p>
               </div>
               <div>
@@ -62,7 +62,7 @@ exports[`pages/GameDetails/Summary/TeamComparison/TeamStats should render TeamSt
                 <p
                   class="text-sm"
                 >
-                  NOP
+                  DAL
                 </p>
               </div>
               <div>
