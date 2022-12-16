@@ -244,14 +244,17 @@ export const mockGames = {
 };
 
 export const gamesHandlers = [
-  rest.get<GetGameByIdRes>('/api/games/:gameId', (req, res, ctx) => {
-    const { gameId } = req.params;
-    const game = mockGames.scoreboard.games.find(
-      (findGame) => findGame.gameId === gameId
-    );
-    return res(ctx.json(game));
-  }),
-  rest.get<GetGamesRes>('/api/games', (req, res, ctx) => {
+  rest.get<GetGameByIdRes>(
+    'http://localhost:3333/api/games/:gameId',
+    (req, res, ctx) => {
+      const { gameId } = req.params;
+      const game = mockGames.scoreboard.games.find(
+        (findGame) => findGame.gameId === gameId
+      );
+      return res(ctx.json(game));
+    }
+  ),
+  rest.get<GetGamesRes>('http://localhost:3333/api/games', (req, res, ctx) => {
     return res(ctx.json(mockGames));
   }),
 ];

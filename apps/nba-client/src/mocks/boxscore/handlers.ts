@@ -3760,11 +3760,14 @@ export const mockBoxcore: GetBoxscoreByGameIdRes[] = [
 ];
 
 export const boxscoreHandlers = [
-  rest.get<GetBoxscoreByGameIdRes>('/api/boxscore/:gameId', (req, res, ctx) => {
-    const { gameId } = req.params;
-    const game = mockBoxcore.find(
-      (boxscore) => boxscore.game.gameId === gameId
-    );
-    return res(ctx.json(game));
-  }),
+  rest.get<GetBoxscoreByGameIdRes>(
+    'http://localhost:3333/api/boxscore/:gameId',
+    (req, res, ctx) => {
+      const { gameId } = req.params;
+      const game = mockBoxcore.find(
+        (boxscore) => boxscore.game.gameId === gameId
+      );
+      return res(ctx.json(game));
+    }
+  ),
 ];
