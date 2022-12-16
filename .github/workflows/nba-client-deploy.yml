@@ -53,6 +53,8 @@ jobs:
           path: '**/dist/apps/nba-client'
           key: ${{ runner.os }}-modules-${{ hashFiles('**/nba-client') }}
       - run: yarn run build:client
+        env:
+          NX_API_BASE_URL: ${{ secrets.NX_API_BASE_URL }}
   deploy:
     needs: [build]
     runs-on: ubuntu-latest
