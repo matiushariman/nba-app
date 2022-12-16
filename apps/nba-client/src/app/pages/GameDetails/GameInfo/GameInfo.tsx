@@ -19,7 +19,7 @@ const GameInfo = () => {
   return (
     <div className="bg-black flex">
       <div className="flex-grow opacity-20 min-w-[240px] relative grayscale hidden md:block">
-        <div className="absolute right-[-50%]">
+        <div className="absolute right-[-180px]">
           <TeamLogo
             teamId={awayTeam.teamId}
             teamName={awayTeam.teamName}
@@ -45,12 +45,12 @@ const GameInfo = () => {
         </div>
       </div>
       <div className="flex-grow opacity-20 min-w-[240px] relative grayscale hidden md:block">
-        <div className="absolute left-[-50%]">
+        <div className="absolute left-[-180px]">
           <TeamLogo
             teamId={homeTeam.teamId}
             teamName={homeTeam.teamName}
-            width={480}
-            height={480}
+            width={360}
+            height={360}
             mode="D"
           />
         </div>

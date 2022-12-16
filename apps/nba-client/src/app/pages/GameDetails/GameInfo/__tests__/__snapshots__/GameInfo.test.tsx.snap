@@ -10,7 +10,7 @@ exports[`pages/GameDetails/GameInfo should render GameInfo that matches snapshot
         class="flex-grow opacity-20 min-w-[240px] relative grayscale hidden md:block"
       >
         <div
-          class="absolute right-[-50%]"
+          class="absolute right-[-180px]"
         >
           <img
             alt="Lakers logo"
@@ -56,14 +56,14 @@ exports[`pages/GameDetails/GameInfo should render GameInfo that matches snapshot
         class="flex-grow opacity-20 min-w-[240px] relative grayscale hidden md:block"
       >
         <div
-          class="absolute left-[-50%]"
+          class="absolute left-[-180px]"
         >
           <img
             alt="Celtics logo"
-            height="480"
+            height="360"
             loading="lazy"
             src="https://cdn.nba.com/logos/nba/2/global/D/logo.svg"
-            width="480"
+            width="360"
           />
         </div>
       </div>
