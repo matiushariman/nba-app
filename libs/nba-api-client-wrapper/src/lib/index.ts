@@ -18,15 +18,17 @@ export class NbaApi {
   }
 
   async getGames() {
-    return axios.get<GetGamesRes>('/api/games');
+    return this.axiosInstance.get<GetGamesRes>('/api/games');
   }
 
   async getGameById(id: GetGameByIdReq['gameId']) {
-    return axios.get<GetGameByIdRes>(`/api/games/${id}`).catch((err) => err);
+    return this.axiosInstance
+      .get<GetGameByIdRes>(`/api/games/${id}`)
+      .catch((err) => err);
   }
 
   async getBoxscoreByGameId(gameId: GetBoxscoreByGameIdReq['gameId']) {
-    return axios
+    return this.axiosInstance
       .get<GetBoxscoreByGameIdRes>(`/api/boxscore/${gameId}`)
       .catch((err) => err);
   }
