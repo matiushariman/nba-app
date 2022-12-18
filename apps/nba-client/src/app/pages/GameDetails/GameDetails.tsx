@@ -7,6 +7,7 @@ import useGetBoxscore from '../../hooks/useGetBoxscore';
 import GameScore from './GameScore';
 import Summary from './Summary';
 import LoadingText from '../../components/LoadingText';
+import BoxScore from './BoxScore';
 
 const TABS = ['Game Summary', 'Box Score'];
 
@@ -32,7 +33,7 @@ const GameDetails = () => {
                 className={({ selected }) =>
                   `${
                     selected && 'font-bold border-b-4 border-black'
-                  } pt-2 pb-2 pl-5 pr-5`
+                  } pt-2 pb-2 pl-5 pr-5 outline-none`
                 }
               >
                 {tab}
@@ -44,7 +45,9 @@ const GameDetails = () => {
           <Tab.Panel>
             <Summary />
           </Tab.Panel>
-          <Tab.Panel>Content 2</Tab.Panel>
+          <Tab.Panel>
+            <BoxScore />
+          </Tab.Panel>
         </Tab.Panels>
       </Tab.Group>
     </>
