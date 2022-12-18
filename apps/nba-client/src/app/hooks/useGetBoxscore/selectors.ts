@@ -13,7 +13,7 @@ export const selectGameTime = () => selectBoxscore()?.game.gameTimeUTC;
 export const selectPeriod = () => {
   const noOfPeriod = selectBoxscore()?.game.period ?? 1;
 
-  return Array.from(new Array(noOfPeriod), (x, i) => {
+  return Array.from(new Array(Math.max(noOfPeriod, 4)), (x, i) => {
     const label = i + 1 <= 4 ? `Q${i + 1}` : `OT${i - 3}`;
 
     return {
