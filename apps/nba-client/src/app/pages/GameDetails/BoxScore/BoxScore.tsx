@@ -6,7 +6,10 @@ const BoxScore = () => {
   const { homeTeam, awayTeam } = selectGameBoxScore();
 
   return (
-    <div className="container mx-auto md:pt-6 md:pb-6 grid gap-4">
+    <div
+      data-testId="game-details-boxscore"
+      className="container mx-auto md:pt-6 md:pb-6 grid gap-4"
+    >
       <PlayersBoxScore
         teamName={awayTeam.teamName}
         teamCity={awayTeam.teamCity}

@@ -9,7 +9,10 @@ import Summary from './Summary';
 import LoadingText from '../../components/LoadingText';
 import BoxScore from './BoxScore';
 
-const TABS = ['Game Summary', 'Box Score'];
+const TABS = [
+  { label: 'Summary', testId: 'tab-summary' },
+  { label: 'Box Score', testId: 'tab-boxscore' },
+];
 
 const GameDetails = () => {
   const { gameId = '' } = useParams<{ gameId: string }>();
@@ -29,14 +32,15 @@ const GameDetails = () => {
           <Tab.List className="container mx-auto">
             {TABS.map((tab) => (
               <Tab
-                key={tab}
+                key={tab.label}
+                data-testId={tab.testId}
                 className={({ selected }) =>
                   `${
                     selected && 'font-bold border-b-4 border-black'
                   } pt-2 pb-2 pl-5 pr-5 outline-none`
                 }
               >
-                {tab}
+                {tab.label}
               </Tab>
             ))}
           </Tab.List>

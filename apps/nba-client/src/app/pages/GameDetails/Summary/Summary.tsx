@@ -3,7 +3,10 @@ import InjuryReport from './InjuryReport';
 import TeamComparison from './TeamComparison';
 
 const Summary = () => (
-  <div className="container mx-auto md:pt-6 md:pb-6 grid gap-4">
+  <div
+    data-testId="game-details-summary"
+    className="container mx-auto md:pt-6 md:pb-6 grid gap-4"
+  >
     <div>
       <Linescores />
     </div>
