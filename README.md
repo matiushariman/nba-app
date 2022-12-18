@@ -1,13 +1,14 @@
 # NBA App
 
 [![codecov](https://codecov.io/gh/matiushariman/nba-app/branch/main/graph/badge.svg?token=UC95QG595M)](https://codecov.io/gh/matiushariman/nba-app)
+![Deployment Workflow](https://github.com/matiushariman/nba-app/actions/workflows/nba-client-deploy.yml/badge.svg)
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
 NBA app is a web application for viewing live NBA data*.
 
-_* At the moment live data is available only in development mode._
+_* First API call to the web server might take awhile._
 
 DEMO URL: https://nba.matiushariman.com/
 
