@@ -2,12 +2,13 @@ import GameCard from './GameCard';
 import ScoreToggle from './ScoreToggle';
 import useGetGames from '../../hooks/useGetGames';
 import { GameProvider } from '../../context/GameContext';
+import LoadingText from '../../components/LoadingText';
 
 const Games = () => {
   const { data, isLoading } = useGetGames();
 
   if (isLoading) {
-    return null;
+    return <LoadingText />;
   }
 
   return (

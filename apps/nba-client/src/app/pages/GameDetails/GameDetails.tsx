@@ -5,6 +5,7 @@ import useGetGame from '../../hooks/useGetGame';
 import useGetBoxscore from '../../hooks/useGetBoxscore';
 import GameScore from './GameScore';
 import Summary from './Summary';
+import LoadingText from '../../components/LoadingText';
 
 const GameDetails = () => {
   const { gameId = '' } = useParams<{ gameId: string }>();
@@ -12,7 +13,7 @@ const GameDetails = () => {
   const { isLoading: isLoadingBoxscore } = useGetBoxscore({ gameId });
 
   if (isLoadingGame || isLoadingBoxscore) {
-    return null;
+    return <LoadingText />;
   }
 
   return (
