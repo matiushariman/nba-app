@@ -3,10 +3,12 @@ import { useNavigate } from 'react-router-dom';
 import TeamDetails from './TeamDetails';
 import Score from './Score';
 import GameStatusText from '../../../../components/GameStatusTextWithContext';
+import { useGameStatusContext } from '../../../../context/GameStatusContext';
 
 import type { ScoreboardProps } from './Scoreboard.types';
 
 const Scoreboard = ({ awayTeam, homeTeam, gameId }: ScoreboardProps) => {
+  const { hasGameStarted } = useGameStatusContext();
   const navigate = useNavigate();
 
   const navigateToGameDetails = () => navigate(`game-details/${gameId}`);
@@ -39,7 +41,9 @@ const Scoreboard = ({ awayTeam, homeTeam, gameId }: ScoreboardProps) => {
       <div
         onClick={navigateToGameDetails}
         role="button"
-        className="text-center flex items-center justify-center pt-2 pb-2 pl-4 pr-4 uppercase text-sm font-bold text-gray-800 bg-gray-50"
+        className={`${
+          !hasGameStarted && 'invisible'
+        } text-center flex items-center justify-center pt-2 pb-2 pl-4 pr-4 uppercase text-sm font-bold text-gray-800 bg-gray-50`}
       >
         Game Details
       </div>

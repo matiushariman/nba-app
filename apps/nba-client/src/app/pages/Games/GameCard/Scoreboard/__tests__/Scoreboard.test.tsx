@@ -6,7 +6,14 @@ const mockNavigate = jest.fn();
 
 jest.mock('react-router-dom', () => ({
   ...(jest.requireActual('react-router-dom') as any),
-  useNavigate: () => mockNavigate,
+  useNavigate: jest.fn().mockImplementationOnce(() => mockNavigate),
+}));
+
+jest.mock('../../../../context/GameStatusContext', () => ({
+  __esModule: true,
+  useGameStatusContext: jest.fn().mockReturnValue({
+    hasGameStarted: true,
+  }),
 }));
 
 describe('pages/Games/GameCard/Scoreboard', () => {
