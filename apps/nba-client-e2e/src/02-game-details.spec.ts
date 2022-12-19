@@ -9,18 +9,31 @@ const test = base.extend<{ gameDetailsSteps: GameDetailsSteps }>({
 
     await page.goto('/');
 
+    await base.step('User clicks on one of the games', async () =>
+      gameDetailsSteps.navigateToGameDetailsPage()
+    );
+
+    await base.step('Verify user is on game details page', async () =>
+      gameDetailsSteps.verifyUserIsOnGameDetailsPage()
+    );
+
     await use(gameDetailsSteps);
   },
 });
 
 test.describe('02-game-details', () => {
-  test('User should be able to navigate to game details page', async ({
+  test('User should be able to navigate to game details page and land on Summary tab', async ({
     gameDetailsSteps,
   }) => {
-    await test.step('User clicks on one of the games', async () =>
-      gameDetailsSteps.navigateToGameDetailsPage());
+    await test.step('Verify user can see Summary content upon landing', async () =>
+      gameDetailsSteps.verifyGameDetailsSummaryIsVisible());
+  });
 
-    await test.step('Verify user is on game details page', async () =>
-      gameDetailsSteps.verifyUserIsOnGameDetailsPage());
+  test('User should be able to see boxscore', async ({ gameDetailsSteps }) => {
+    await test.step('User clicks on box score tab', () =>
+      gameDetailsSteps.navigateToBoxScoreTab());
+
+    await test.step('Verify user can see boxscore', () =>
+      gameDetailsSteps.verifyGameDetailsBoxScoreIsVisible());
   });
 });

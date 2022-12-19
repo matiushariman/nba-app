@@ -83,3 +83,26 @@ export const selectGameScore = () => {
     gameStatusText: game?.game.gameStatusText ?? '-',
   };
 };
+
+export const selectGameBoxScore = () => {
+  const boxScore = selectBoxscore();
+
+  return {
+    awayTeam: {
+      teamName: boxScore?.game.awayTeam.teamName ?? '-',
+      teamCity: boxScore?.game.awayTeam.teamCity ?? '-',
+      players:
+        boxScore?.game.awayTeam.players.filter(
+          (player) => player.status !== 'INACTIVE'
+        ) ?? [],
+    },
+    homeTeam: {
+      teamName: boxScore?.game.homeTeam.teamName ?? '-',
+      teamCity: boxScore?.game.homeTeam.teamCity ?? '-',
+      players:
+        boxScore?.game.homeTeam.players.filter(
+          (player) => player.status !== 'INACTIVE'
+        ) ?? [],
+    },
+  };
+};
