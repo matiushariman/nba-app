@@ -6,6 +6,7 @@ import type {
   GetGameByIdReq,
   GetBoxscoreByGameIdReq,
   GetBoxscoreByGameIdRes,
+  GetGamesByDateReq,
 } from '@nba-app/types-nba';
 
 export class NbaApi {
@@ -30,6 +31,12 @@ export class NbaApi {
   async getBoxscoreByGameId(gameId: GetBoxscoreByGameIdReq['gameId']) {
     return this.axiosInstance
       .get<GetBoxscoreByGameIdRes>(`/api/boxscore/${gameId}`)
+      .catch((err) => err);
+  }
+
+  async getGamesByDate(reqPayload: GetGamesByDateReq) {
+    return this.axiosInstance
+      .post<GetGamesRes>('/api/games/getGamesByDate', reqPayload)
       .catch((err) => err);
   }
 }

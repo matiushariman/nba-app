@@ -257,4 +257,10 @@ export const gamesHandlers = [
   rest.get<GetGamesRes>('http://localhost:3333/api/games', (req, res, ctx) => {
     return res(ctx.json(mockGames));
   }),
+  rest.post<GetGamesRes>(
+    'http://localhost:3333/api/games/getGamesByDate',
+    (req, res, ctx) => {
+      return res(ctx.json(mockGames));
+    }
+  ),
 ];

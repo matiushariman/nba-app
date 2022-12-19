@@ -17,7 +17,7 @@ describe('GamesController', () => {
     }).compile();
   });
 
-  describe('getData', () => {
+  describe('getGames', () => {
     it('should return list of games"', async () => {
       const result: GetGamesRes = {
         meta: {
@@ -43,8 +43,10 @@ describe('GamesController', () => {
         await games.get<GamesController>(GamesController).getGames()
       ).toEqual(result);
     });
+  });
 
-    it('should return a games"', async () => {
+  describe('getGameById', () => {
+    it('should return a game', async () => {
       const result: GetGameByIdRes = {
         gameId: '0022200360',
         gameCode: '20221206/LALCLE',
@@ -129,6 +131,36 @@ describe('GamesController', () => {
         await games
           .get<GamesController>(GamesController)
           .getGameById({ gameId: '0022200360' })
+      ).toEqual(result);
+    });
+  });
+
+  describe('getGameByDate', () => {
+    it('should return list of games"', async () => {
+      const result: GetGamesRes = {
+        meta: {
+          version: 1,
+          request:
+            'https://nba-prod-us-east-1-mediaops-stats.s3.amazonaws.com/NBA/liveData/scoreboard/todaysScoreboard_00.json',
+          time: '2022-12-05 07:57:39.5739',
+          code: 200,
+        },
+        scoreboard: {
+          gameDate: '2022-12-04',
+          leagueId: '00',
+          leagueName: 'National Basketball Association',
+          games: [],
+        },
+      };
+
+      jest
+        .spyOn(games.get<GamesService>(GamesService), 'getGamesByDate')
+        .mockImplementation(async () => result);
+
+      expect(
+        await games
+          .get<GamesController>(GamesController)
+          .getGamesByDate({ gameDate: '2022-12-19' })
       ).toEqual(result);
     });
   });
