@@ -6,7 +6,10 @@ import type {
   GetGameByIdRes,
   GetGamesRes,
   GetGameByIdReq,
+  GetGamesByDateRes,
+  GetGamesByDateReq,
 } from '@nba-app/types-nba';
+import { generateGamesResponse } from './games.utils';
 
 @Injectable()
 export class GamesService {
@@ -44,5 +47,21 @@ export class GamesService {
     return data.scoreboard.games.find(
       (currentGame) => currentGame.gameId === gameId
     );
+  }
+
+  async getGamesByDate({ gameDate }: GetGamesByDateReq): Promise<GetGamesRes> {
+    const { data } = await firstValueFrom(
+      this.httpService
+        .get<GetGamesByDateRes>(
+          `https://sg.global.nba.com/stats2/scores/daily.json?gameDate=${gameDate}`
+        )
+        .pipe(
+          catchError(() => {
+            throw 'Oops';
+          })
+        )
+    );
+
+    return generateGamesResponse(gameDate, data);
   }
 }

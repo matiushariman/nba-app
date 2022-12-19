@@ -1,6 +1,7 @@
-import { Controller, Get, Param } from '@nestjs/common';
+import { Controller, Get, Param, Post, Body } from '@nestjs/common';
 
 import { GamesService } from './games.service';
+import { GetGamesByDateReqDto } from './games.dto';
 
 import type { GetGameByIdReq } from '@nba-app/types-nba';
 
@@ -16,5 +17,10 @@ export class GamesController {
   @Get(':gameId')
   getGameById(@Param() params: GetGameByIdReq) {
     return this.gamesService.getGameById(params.gameId);
+  }
+
+  @Post('getGamesByDate')
+  getGamesByDate(@Body() reqBody: GetGamesByDateReqDto) {
+    return this.gamesService.getGamesByDate(reqBody);
   }
 }
