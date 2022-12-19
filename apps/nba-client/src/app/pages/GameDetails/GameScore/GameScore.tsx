@@ -1,10 +1,10 @@
 import TeamScore from './TeamScore';
 import TeamLogo from '../../../components/TeamLogo';
 import GameStatusText from '../../../components/GameStatusText';
-import { selectGame } from '../../../hooks/useGetGame';
+import { selectGameScore } from '../../../hooks/useGetBoxscore';
 
 const GameScore = () => {
-  const game = selectGame();
+  const game = selectGameScore();
 
   if (!game) {
     return null;

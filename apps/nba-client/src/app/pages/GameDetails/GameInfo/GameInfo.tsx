@@ -1,12 +1,12 @@
 import TeamLogo from '../../../components/TeamLogo';
-import { selectGame } from '../../../hooks/useGetGame';
 import { selectArena, selectGameTime } from '../../../hooks/useGetBoxscore';
 import { convertDateToEt } from '../../../utils/dateUtils';
+import { selectGameScore } from '../../../hooks/useGetBoxscore';
 
 import './GameInfo.styles.css';
 
 const GameInfo = () => {
-  const game = selectGame();
+  const game = selectGameScore();
   const arena = selectArena();
   const gameTime = selectGameTime();
 

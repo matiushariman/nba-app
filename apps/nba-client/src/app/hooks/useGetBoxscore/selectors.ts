@@ -66,6 +66,24 @@ export const selectInjuredPlayers = () => {
   return [...awayTeamInjuredPlayers, ...homeTeamInjuredPlayers];
 };
 
+export const selectGameScore = () => {
+  const game = selectBoxscore();
+
+  return {
+    awayTeam: {
+      score: game?.game.awayTeam.score ?? 0,
+      teamId: game?.game.awayTeam.teamId ?? 0,
+      teamName: game?.game.awayTeam.teamName ?? '-',
+    },
+    homeTeam: {
+      score: game?.game.homeTeam.score ?? 0,
+      teamId: game?.game.homeTeam.teamId ?? 0,
+      teamName: game?.game.homeTeam.teamName ?? '-',
+    },
+    gameStatusText: game?.game.gameStatusText ?? '-',
+  };
+};
+
 export const selectGameBoxScore = () => {
   const boxScore = selectBoxscore();
 

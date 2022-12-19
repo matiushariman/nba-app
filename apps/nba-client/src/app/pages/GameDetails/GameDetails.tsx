@@ -2,7 +2,6 @@ import { useParams } from 'react-router-dom';
 import { Tab } from '@headlessui/react';
 
 import GameInfo from './GameInfo';
-import useGetGame from '../../hooks/useGetGame';
 import useGetBoxscore from '../../hooks/useGetBoxscore';
 import GameScore from './GameScore';
 import Summary from './Summary';
@@ -16,10 +15,9 @@ const TABS = [
 
 const GameDetails = () => {
   const { gameId = '' } = useParams<{ gameId: string }>();
-  const { isLoading: isLoadingGame } = useGetGame({ gameId });
   const { isLoading: isLoadingBoxscore } = useGetBoxscore({ gameId });
 
-  if (isLoadingGame || isLoadingBoxscore) {
+  if (isLoadingBoxscore) {
     return <LoadingText />;
   }
 

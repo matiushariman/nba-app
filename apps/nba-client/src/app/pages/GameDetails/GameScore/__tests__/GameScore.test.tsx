@@ -1,8 +1,8 @@
 import GameScore from '..';
 import { render } from '../../../../utils/testUtils';
 
-jest.mock('../../../hooks/useGetGame', () => ({
-  selectGame: jest.fn().mockReturnValueOnce({
+jest.mock('../../../hooks/useGetBoxscore', () => ({
+  selectGameScore: jest.fn().mockReturnValueOnce({
     awayTeam: {
       teamId: '1',
       teamName: 'Lakers',
